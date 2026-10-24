@@ -95,20 +95,27 @@ cambia por <piloto>/sigue, repara sí/no, daño`
 
 ## 5. Estado al momento de este traspaso (dom 25-oct, ~00:30)
 
-- **Vamos por el stint 12** (Guille, set 5 uso 2/3), entra en la **v122**. Parada sin cambio de ruedas.
-- Guille hace **4 stints seguidos** (10-11-12-13): cierra el triple del set 4 (stint 10), luego triple
-  completo del set 5 (11-12-13). Al cerrar el stint 13 (v133, ~00:30) → **neumáticos nuevos set 6 +
-  cede a Fufo**.
+- **Vamos por el stint 12** (Guille, set 5 uso 2/3), entra en la **v122**. Parada SOLO energía, sin
+  cambio de ruedas (el triple del set 5 sigue abierto).
+- Guille hace **4 stints seguidos** (10-11-12-13): cerró el triple del set 4 (stint 10, v100) y está
+  en el triple del set 5 (11 → v111 / 12 → v122 / falta 13). Al cerrar el **stint 13 (entra v133,
+  ~00:30)** → **neumáticos nuevos (set 6) + cede a Fufo**. Ese es el próximo evento importante.
 - Secuencia de vueltas de entrada hasta ahora: 11, 22, 33, 44, 45, 56, 67, 78, 89, 100, 111, 122.
+  La siguiente debería ser la **v133** (stint 13).
 - **Un cuelgue de PC** tras la parada 4 (stint 5) obligó a reconstruir a ciegas los stints 5-7; de ahí
   los "(sin dato)" y el `(recon)` en esas filas.
-- **Pendiente de medir:** desgaste al cierre del triple del set 5 (primer dato nocturno del experimento).
+- **Dejamos de trackear energía** (consumo validado ~8.9 %/vuelta, 11 laps entran sobrados). Ahora se
+  trackea **solo el desgaste**, con foco en la noche: medir si con pista fría desgasta menos.
+- **Pendiente de medir (lo primero a pedir en la próxima parada):** desgaste FL-FR-RL-RR al cierre del
+  triple del set 5 (stint 13, v133) = primer dato nocturno del experimento. Vigilar el FL izquierdo.
 
 ---
 
 ## 6. Dónde está cada cosa
 
-- `carrera/` → **lo que se usa ahora** (esto). `plan-vivo.csv`, `registro.md`, este `PITWALL.md`,
-  y `Estrategia 24h lemans - Hoja 1.csv` (plan original de referencia).
-- `app/` → la app de telemetría en desarrollo (grabadora, structs, capturas). **No se toca durante
-  la carrera**; es otro hilo de trabajo. Su propio punto de entrada es `app/docs/03-traspaso-y-bitacora.md`.
+Dos repos git independientes (hermanos en `~/projects/`), separados el 25-oct-2026:
+
+- **`lmu-carrera/`** (ESTE repo) → lo que se usa ahora. `plan-vivo.csv` (fuente única), `registro.md`
+  (detalle narrado), este `PITWALL.md`, y `Estrategia 24h lemans - Hoja 1.csv` (plan original).
+- **`lmu-app/`** → la app de telemetría en desarrollo (grabadora, structs, capturas). **No se toca
+  durante la carrera**; otro hilo. Su entrada propia es `docs/03-traspaso-y-bitacora.md`.
