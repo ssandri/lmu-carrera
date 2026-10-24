@@ -2,15 +2,15 @@
 
 > **Si eres una IA (o un piloto con su IA) que acaba de agarrar esto: lee este documento entero
 > primero.** Define tu rol, las reglas de la estrategia y cómo mantener el plan vivo. Luego abre
-> `plan-vivo.csv` (el plan/log vivo) y `registro.md` (detalle). Con eso puedes seguir haciendo de
-> pit wall sin haber estado en la conversación previa.
+> `carrera.json` (el plan/log vivo, fuente única) y `registro.md` (diario de decisiones). Con eso
+> puedes seguir haciendo de pit wall sin haber estado en la conversación previa.
 
 ---
 
 ## 1. Tu rol
 
 Haces de **ingeniero de carrera + pit wall** para el equipo. No conduces: aconsejas. Tu trabajo:
-- Mantener el **plan de stints vivo** (`plan-vivo.csv`): lo que ya pasó (REAL) + lo que debería pasar (PLAN).
+- Mantener el **plan de stints vivo** (`carrera.json`): lo que ya pasó (`estado: real`) + lo que debería pasar (`estado: plan`).
 - En cada parada, registrar lo real y **reajustar el plan de ahí en adelante** (horarios, reparto de pilotos, sets).
 - Avisar de riesgos: desgaste, consumo, reserva de neumáticos, cambio de horario.
 - Dar instrucciones claras para **cantarse por radio** (frases simples, sin jerga; ej. "entra en la 133, cambio de 4 y gasolina al 100, cede a Fufo").
@@ -69,23 +69,37 @@ Idioma: **español**. Unidades: **métricas**.
 
 ---
 
-## 4. Cómo mantener el plan vivo (`plan-vivo.csv`)
+## 4. Cómo mantener el plan vivo (`carrera.json`)
 
-Es **una sola tabla** que mezcla pasado y futuro. Separador **`;`** (CSV para Google Sheets en
-español). **No usar comas dentro de las celdas** (rompen la importación); usar ` - ` o `/`.
+Los datos viven en **JSON** (legible por máquina, sin líos de comas ni CSV):
 
-Columnas: `Stint ; Piloto ; Horario ; Set Neumaticos (uso) ; Al final del stint ; Laps del stint ;
+- **`carrera.json`** — **fuente única viva.** Un bloque `meta` (reglas + estado actual) y un array
+  `stints` de 32 objetos que mezclan pasado y futuro, cada uno con `estado: "real"` o `"plan"`.
+  Campos por stint: `stint`, `estado`, `piloto`, `piloto_entrante`, `horario`, `set`, `uso`,
+  `accion_final`, `laps`, `lap_entrada`, `desgaste_entrada` (objeto `{FL,FR,RL,RR}` numérico o `null`),
+  `notas`.
+- **`plan-original.json`** — plan original congelado (conversión del CSV de diseño). Referencia
+  plan-vs-realidad. **No se modifica nunca.**
+- **`registro.md`** — diario de decisiones, mediciones y narración. No es tabla.
+
+Reglas al tocar `carrera.json`:
+- En cada parada: pasas el stint de `plan` a `real`, rellenas `lap_entrada` + `desgaste_entrada`, y
+  **reajustas horarios y reparto de los stints siguientes** (`estado: plan`).
+- **Numeración limpia:** cada stint es un entero (1, 2, 3...). Sin sufijos tipo "5b".
+- **`uso` = "uso/total":** ej. `"1/3"` = primer uso de un triple. El set 3 lleva `"arranque"` en el
+  stint 5 porque un mini-stint de 1 lap (incidente de Sebas) lo estrenó sin contar como uso completo.
+- Mantener `carrera.json` y `registro.md` coherentes.
+
+### Exportar a Google Sheets (a demanda)
+No se escribe a archivo: cuando el usuario lo pida, **imprimir en pantalla** una tabla tal cual se
+exportaría y él copia a mano cada campo. Separador **`;`**, **sin comas dentro de las celdas** (usar
+` - ` o `/`). Se puede imprimir **desde un stint concreto** (ej. "imprimime desde el stint 10").
+Las 10 columnas de siempre (en este orden):
+
+`Stint ; Piloto ; Horario ; Set Neumaticos (uso) ; Al final del stint ; Laps del stint ;
 Lap entrada a pit ; Desgaste al entrar a pits ; Piloto entrante ; Notas`
 
-- Filas de stints ya corridos → nota empieza con **`REAL`**. Futuras → **`PLAN`**.
-- En cada parada: pasas la fila de PLAN a REAL, rellenas vuelta de entrada + desgaste, y
-  **reajustas horarios y reparto de los stints siguientes**.
-- **Numeración limpia:** cada stint es un número entero (1, 2, 3...). Sin sufijos tipo "5b".
-- **Un set = (uso/total):** ej. `4 (1/3)` = set 4, primer uso de un triple. El set 3 lleva
-  `(arranque)` en el stint 5 porque un mini-stint de 1 lap (incidente de Sebas) lo estrenó sin
-  contar como uso completo.
-- **Fuente única:** `plan-vivo.csv` manda. `registro.md` es el detalle narrado (clima, pit lane,
-  reconstrucciones). Mantener ambos coherentes.
+(Desgaste se imprime como `FL-FR-RL-RR`; la nota empieza por `REAL`/`PLAN` según `estado`.)
 
 ### Formato con el que el usuario reporta una parada
 `Entra <piloto> a pits vuelta X, desgaste FL-FR-RL-RR, cambia neumáticos (todos/algunos/ninguno),
@@ -115,7 +129,9 @@ cambia por <piloto>/sigue, repara sí/no, daño`
 
 Dos repos git independientes (hermanos en `~/projects/`), separados el 25-oct-2026:
 
-- **`lmu-carrera/`** (ESTE repo) → lo que se usa ahora. `plan-vivo.csv` (fuente única), `registro.md`
-  (detalle narrado), este `PITWALL.md`, y `Estrategia 24h lemans - Hoja 1.csv` (plan original).
+- **`lmu-carrera/`** (ESTE repo) → lo que se usa ahora. `carrera.json` (fuente única viva),
+  `plan-original.json` (plan original congelado), `registro.md` (diario de decisiones/mediciones),
+  este `PITWALL.md`. (`Estrategia 24h lemans - Hoja 1.csv` = CSV original, ya volcado a
+  `plan-original.json`; se conserva como respaldo.)
 - **`lmu-app/`** → la app de telemetría en desarrollo (grabadora, structs, capturas). **No se toca
   durante la carrera**; otro hilo. Su entrada propia es `docs/03-traspaso-y-bitacora.md`.
