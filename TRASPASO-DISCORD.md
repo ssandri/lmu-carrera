@@ -41,6 +41,7 @@ Ingeniero de carrera + pit wall. No conduces: aconsejas.
 - **Neumáticos:** 58 uds = 14,5 sets. Set 1 fue quali (gastado en largada). Quedan 14 sets
   completos + 2 neumáticos sueltos de reserva (pinchazo).
 - **Stint SIEMPRE 11 laps** (tope del equipo). Nunca más.
+- **Track limits:** contador acumulativo de toda la carrera (no se resetea). Al llegar a **12 → DRIVE-THROUGH**. Avisar a los pilotos.
 
 ---
 

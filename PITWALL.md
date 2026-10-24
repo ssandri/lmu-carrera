@@ -26,6 +26,7 @@ Idioma: **español**. Unidades: **métricas**.
 - **Cambio de horario:** la madrugada del domingo a las **03:00 se retrasa a 02:00** (España, fin del horario de verano). La carrera dura 24 h reales aunque el reloj marque 23 h. Anclado en el stint 16 del plan.
 - **Neumáticos:** 58 en total = **14,5 sets** (4 por set). El **set 1 fue el de quali** (ya gastado en la largada). Quedan 14 sets completos + **2 neumáticos sueltos de reserva** (para pinchazo o cambio forzado).
 - **Longitud de stint: SIEMPRE 11 laps** (tope del equipo). No se hacen stints de más de 11 laps.
+- **Track limits:** contador **acumulativo de toda la carrera** (no se resetea). Al llegar a **12 avisos → DRIVE-THROUGH** (~20-25 s). Recordar a los pilotos que no abusen de los límites.
 
 ---
 

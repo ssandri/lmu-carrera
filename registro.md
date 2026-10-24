@@ -32,6 +32,9 @@ Neumáticos: 58 (4 de quali al ~90 %) → 54 nuevos en carrera = 13.5 sets.
 - **Neumáticos:** cambio de 4 al cerrar set (12 s); 2 solo si el desgaste va muy desigual.
   Triple solo si el agarre a ~64 % de vida es aceptable, y **solo de día** (pista caliente).
 - **Reparar:** solo si el daño cuesta más de ~1.5 s/vuelta durante el stint siguiente (30 s). Estético: no.
+- **Track limits:** contador **acumulativo de toda la carrera** (no se resetea). Al llegar a **12 avisos
+  → DRIVE-THROUGH** (~20-25 s perdidos). En stint 14 vamos por 5.25/12. Recordar a cada piloto que no
+  abuse de los límites — quedan muchos stints y es una penalización 100 % evitable.
 
 ## Experimento abierto: desgaste de noche
 Medir si con pista fría (stints ~13-21) el desgaste a fin de triple es menor que de día. Primer dato
@@ -64,8 +67,19 @@ Guille. **Se perdió la telemetría en vivo.** Los stints 5-7 se reconstruyeron 
 
 ### Triple del set 5 — Guille 4 stints seguidos (stints 10-13)
 - Guille encadena 10-11-12-13. Stints 11 y 12 sin dato de desgaste (seguimos a ciegas tras el cuelgue).
-- **Pendiente:** al cerrar el stint 13 (v133) tomar el primer dato nocturno de desgaste y comparar con
-  la referencia de día del set 4.
+- **Stint 13 (cierre triple set 5):** Guille cumplió el plan, entró v133, neumáticos nuevos (set 6),
+  cedió a Fufo que sale v134. **El desgaste de cierre NO se reportó** → el primer dato nocturno del
+  experimento se perdió. Queda pendiente pedirlo en la próxima entrada (stint 15).
+
+### Pista cauchada — máximo agarre (stint 14, ~01:07, pos 24)
+- Con Fufo ya en pista (set 6 nuevo), la pista está en **Saturated Grip** = **seca y con el MÁXIMO
+  agarre posible** (goma bien asentada/cauchada, no es lluvia). Clock in-game 01:07. Clima: nubes
+  ligeras, aire 17 °C, pista 20.2 °C. Track limits 5.25/12.
+- **Implicación estratégica:** condiciones óptimas. Pista fría de noche (20.2 °C) + máximo agarre →
+  escenario favorable para **menor desgaste**, justo lo que queríamos medir en el experimento nocturno.
+  No toca nada del plan: seguimos con el reparto de sets. Confirmar al próximo reporte el ritmo real de
+  Fufo y, sobre todo, pedir el **desgaste FL-FR-RL-RR al cerrar el set 6 (stint 15)** para tener por fin
+  un dato nocturno limpio.
 
 ## Reorganización de archivos (dom 25-oct ~00:30)
 Se pasó de CSV a JSON como formato fuente:
