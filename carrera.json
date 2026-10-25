@@ -24,15 +24,15 @@
       "experimento_abierto": "medir desgaste de noche (stints ~13-21) vs dia. Primer dato nocturno: cierre triple set 5 (stint 13, v133)."
     },
     "estado_actual": {
-      "momento": "dom 25-oct ~01:07 (clock in-game)",
-      "stint_en_curso": 14,
+      "momento": "dom 25-oct ~01:53 (clock in-game aprox)",
+      "stint_en_curso": 16,
       "posicion": 24,
-      "detalle": "Fufo set 6 uso 1/2, salio v134 con neumaticos nuevos. Guille cerro el triple del set 5 segun plan (stint 13).",
-      "proximo_evento": "stint 15 (~v145): Fufo cierra el doble del set 6 -> neumaticos nuevos (set 7) + cede a Sebas.",
-      "clima": "PISTA SECA con MAXIMO agarre (Saturated Grip = goma bien asentada/cauchada) a las ~01:07. Nubes ligeras 17C aire, pista 20.2C. Condiciones optimas de agarre - favorable para ritmo y desgaste.",
-      "track_limits_actual": "5.25/12 (al llegar a 12 = Drive-Through). Avisar a pilotos.",
-      "pendiente": "Desgaste FL-FR-RL-RR de cierre del triple set 5 (stint 13) NO reportado -> primer dato nocturno perdido. Pedir desgaste en la proxima entrada (stint 15).",
-      "secuencia_laps_entrada": [11, 22, 33, 44, 45, 56, 67, 78, 89, 100, 111, 122, 133]
+      "detalle": "Sebas set 7 uso 1/2, nuevos. Fufo cerro el doble del set 6 (stint 15, entra v144). El cambio de horario 03:00->02:00 cae en este tramo.",
+      "proximo_evento": "stint 17 (~v166): Sebas cierra el doble del set 7 -> neumaticos nuevos (set 8) + cede a Fufo.",
+      "clima": "Noche, pista seca a maximo agarre. Condiciones favorables de desgaste.",
+      "track_limits_actual": "5.25/12 al ultimo dato (al llegar a 12 = Drive-Through). Fufo tuvo perdidas en el stint 15 - confirmar si subio el contador.",
+      "experimento_nocturno": "PRIMER DATO OBTENIDO (set 6, doble, stint 15): FL 78 tras 22 laps = ~1.0 %/vuelta vs ~1.15 de dia. De noche desgasta algo menos. Dato algo contaminado por perdidas de Fufo. FL sobradisimo vs umbral 64.",
+      "secuencia_laps_entrada": [11, 22, 33, 44, 45, 56, 67, 78, 89, 100, 111, 122, 133, 144]
     }
   },
   "stints": [
@@ -49,10 +49,10 @@
     { "stint": 11, "estado": "real", "piloto": "Guille",  "piloto_entrante": "Guille",  "horario": "22:58-23:44", "set": 5,  "uso": "1/3",       "accion_final": "sin cambio",                        "laps": 11, "lap_entrada": 111, "desgaste_entrada": { "FL": null, "FR": null, "RL": null, "RR": null }, "notas": "11 v set 5. Sin dato de desgaste" },
     { "stint": 12, "estado": "real", "piloto": "Guille",  "piloto_entrante": "Guille",  "horario": "23:44-00:30", "set": 5,  "uso": "2/3",       "accion_final": "sin cambio (solo energia)",         "laps": 11, "lap_entrada": 122, "desgaste_entrada": { "FL": null, "FR": null, "RL": null, "RR": null }, "notas": "EN CURSO. Entra v122. 11 v set 5. Desde aqui: trackear solo desgaste (energia validada ~8.9%/v)" },
     { "stint": 13, "estado": "real", "piloto": "Guille",  "piloto_entrante": "Fufo",    "horario": "00:30-~01:07", "set": 5,  "uso": "3/3",      "accion_final": "neumaticos nuevos",                 "laps": 11, "lap_entrada": 133, "desgaste_entrada": { "FL": null, "FR": null, "RL": null, "RR": null }, "notas": "REAL. Cierre triple set 5 cumplido segun plan. Fufo sale v134 con set 6 nuevo. Pos 24. DESGASTE DE CIERRE NO REPORTADO (primer dato nocturno perdido)" },
-    { "stint": 14, "estado": "real", "piloto": "Fufo",    "piloto_entrante": "Fufo",    "horario": "~01:07-02:03", "set": 6,  "uso": "1/2",      "accion_final": "sin cambio",                        "laps": 11, "lap_entrada": null, "desgaste_entrada": { "FL": null, "FR": null, "RL": null, "RR": null }, "notas": "EN CURSO. Fufo salio v134 set 6 nuevo. Clock 01:07 pos 24. CLIMA: nubes ligeras 17C, pista SECA con MAXIMO agarre (Saturated Grip = goma asentada) 20.2C. Track limits 5.25/12. NOCHE - condiciones optimas, vigilar desgaste" },
-    { "stint": 15, "estado": "plan", "piloto": "Fufo",    "piloto_entrante": "Sebas",   "horario": "02:03-02:50", "set": 6,  "uso": "2/2",       "accion_final": "neumaticos nuevos",                 "laps": 11, "lap_entrada": null, "desgaste_entrada": { "FL": null, "FR": null, "RL": null, "RR": null }, "notas": "Cambio a Sebas. Nuevos set 7" },
-    { "stint": 16, "estado": "plan", "piloto": "Sebas",   "piloto_entrante": "Sebas",   "horario": "02:50 (CEST)-02:36 (CET)", "set": 7, "uso": "1/2", "accion_final": "sin cambio",                   "laps": 11, "lap_entrada": null, "desgaste_entrada": { "FL": null, "FR": null, "RL": null, "RR": null }, "notas": "CAMBIO HORARIO 03:00->02:00" },
-    { "stint": 17, "estado": "plan", "piloto": "Sebas",   "piloto_entrante": "Fufo",    "horario": "02:36-03:23", "set": 7,  "uso": "2/2",       "accion_final": "neumaticos nuevos",                 "laps": 11, "lap_entrada": null, "desgaste_entrada": { "FL": null, "FR": null, "RL": null, "RR": null }, "notas": "Cambio a Fufo. Nuevos set 8" },
+    { "stint": 14, "estado": "real", "piloto": "Fufo",    "piloto_entrante": "Fufo",    "horario": "~01:07-~01:53", "set": 6,  "uso": "1/2",      "accion_final": "sin cambio",                        "laps": 11, "lap_entrada": 144, "desgaste_entrada": { "FL": 78, "FR": 86, "RL": 82, "RR": 85 }, "notas": "REAL. Primer uso del set 6. Entra v144, NO cambia ruedas, SIGUE Fufo. DATO NOCTURNO (11 laps): FL 78 = ~2.0%/v, mas que de dia (~1.15) pero Fufo tuvo un par de perdidas que castigaron las ruedas de mas -> dato contaminado, no concluyente" },
+    { "stint": 15, "estado": "real", "piloto": "Fufo",    "piloto_entrante": "Sebas",   "horario": "~01:53-02:39", "set": 6,  "uso": "2/2",      "accion_final": "neumaticos nuevos",                 "laps": 11, "lap_entrada": null, "desgaste_entrada": { "FL": null, "FR": null, "RL": null, "RR": null }, "notas": "EN CURSO. Fufo 2o uso del set 6 (mismas ruedas, 78-86-82-85 al empezar). Cierra el DOBLE del set 6. Al final cede a Sebas (toma en ~40 min)" },
+    { "stint": 16, "estado": "plan", "piloto": "Sebas",   "piloto_entrante": "Sebas",   "horario": "02:39 (CEST)-02:25 (CET)", "set": 7, "uso": "1/2", "accion_final": "sin cambio",                   "laps": 11, "lap_entrada": null, "desgaste_entrada": { "FL": null, "FR": null, "RL": null, "RR": null }, "notas": "Sebas toma el volante aqui (set 7 nuevo). CAMBIO HORARIO 03:00->02:00 cae por este tramo. NOCHE - vigilar desgaste" },
+    { "stint": 17, "estado": "plan", "piloto": "Sebas",   "piloto_entrante": "Fufo",    "horario": "02:25-03:11", "set": 7,  "uso": "2/2",       "accion_final": "neumaticos nuevos",                 "laps": 11, "lap_entrada": null, "desgaste_entrada": { "FL": null, "FR": null, "RL": null, "RR": null }, "notas": "Cierre DOBLE set 7. Cambio a Fufo. Nuevos set 8" },
     { "stint": 18, "estado": "plan", "piloto": "Fufo",    "piloto_entrante": "Fufo",    "horario": "03:23-04:09", "set": 8,  "uso": "1/2",       "accion_final": "sin cambio",                        "laps": 11, "lap_entrada": null, "desgaste_entrada": { "FL": null, "FR": null, "RL": null, "RR": null }, "notas": "" },
     { "stint": 19, "estado": "plan", "piloto": "Fufo",    "piloto_entrante": "Sebas",   "horario": "04:09-04:56", "set": 8,  "uso": "2/2",       "accion_final": "neumaticos nuevos",                 "laps": 11, "lap_entrada": null, "desgaste_entrada": { "FL": null, "FR": null, "RL": null, "RR": null }, "notas": "Cambio a Sebas. Nuevos set 9" },
     { "stint": 20, "estado": "plan", "piloto": "Sebas",   "piloto_entrante": "Sebas",   "horario": "04:56-05:42", "set": 9,  "uso": "1/2",       "accion_final": "sin cambio",                        "laps": 11, "lap_entrada": null, "desgaste_entrada": { "FL": null, "FR": null, "RL": null, "RR": null }, "notas": "" },

@@ -37,9 +37,17 @@ Neumáticos: 58 (4 de quali al ~90 %) → 54 nuevos en carrera = 13.5 sets.
   abuse de los límites — quedan muchos stints y es una penalización 100 % evitable.
 
 ## Experimento abierto: desgaste de noche
-Medir si con pista fría (stints ~13-21) el desgaste a fin de triple es menor que de día. Primer dato
-nocturno pendiente: **cierre del triple del set 5 (stint 13, v133)**. Referencia de día (set 4): el
-triple proyectó **59-63-73-71** al cierre (FL la peor, bajo el umbral ~64 %). Vigilar el FL izquierdo.
+Medir si con pista fría el desgaste es menor que de día. Referencia de día (set 4, triple): proyectó
+**59-63-73-71** al cierre (FL la peor). Vigilar el FL izquierdo.
+
+- **Stint 13 (cierre triple set 5):** dato de cierre NO reportado → se perdió.
+- **✅ Primer dato nocturno — stint 15 (cierre DOBLE set 6, v144):** desgaste restante
+  **FL 78 · FR 86 · RL 82 · RR 85**. En 22 laps (doble) el FL perdió ~22 % → **~1.0 %/vuelta** frente a
+  ~1.15 %/vuelta de día. **Confirma la hipótesis: de noche desgasta algo menos.** El FL a 78 % queda
+  muy por encima del umbral (64 %), sin problema para un doble.
+  ⚠️ **Dato algo contaminado:** Fufo tuvo un par de pérdidas (trompos/salidas) en este stint que pueden
+  haber castigado los neumáticos de más — el desgaste "limpio" sería probablemente aún menor. Confirmar
+  si esas pérdidas sumaron track limits (iba 5.25/12).
 
 ## Bitácora narrada (incidentes y reconstrucciones)
 
