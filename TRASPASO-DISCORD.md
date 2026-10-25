@@ -82,15 +82,21 @@ Ingeniero de carrera + pit wall. No conduces: aconsejas.
 > próximo evento y qué medir.
 
 ```
-Momento:        (rellenar: ej. dom ~07:00, fin de mi último stint)
-Stint en curso: (rellenar)
-Piloto:         (rellenar) — set X (uso Y/Z)
-Próximo evento: (rellenar: qué pasa en la próxima parada)
-A medir:        (rellenar: qué desgaste/dato pedir en la próxima entrada)
-Reserva sets:   (rellenar si cambió)
+Momento:        dom 25-oct ~06:25 Madrid (CET). Sebas se va a dormir, traspaso aquí.
+Stint en curso: 22 — EN CURSO
+Piloto:         Mariano — set 10 (uso 1/2), nuevo, arrancó ~v222
+Acaba de pasar: Sebas cerró su doble (set 9) en v221, desgaste 68-71-75-75, cedió a Mariano.
+Próximo evento: stint 23 (~v243): Mariano cierra el doble del set 10 → set 11 nuevo + cede a Gonzalo. Amanece en este tramo.
+A medir:        desgaste FL-FR-RL-RR en cada entrada (FL es el crítico). Ver si al amanecer sube hacia ~1.5%/v.
+Track limits:   7.75/12 ⚠️ — a 12 = DRIVE-THROUGH. Avisar fuerte a los pilotos, es el riesgo nº1.
+Reserva sets:   ~22 neumáticos nuevos (tras montar set 10). Plan consume 20 hasta bandera → sobran ~2. Cuadra.
+Proyección:     se completan los 32 stints. Stint 32 cierra ~13:57 Madrid, bandera 15:00 (margen ~1h).
+Desgaste noche: FL ~1.4-1.5%/v, NO desgasta menos que de día. Mantener dobles; triples solo de día (set 12).
 ```
 
-Mientras tanto, el estado más reciente guardado está en `carrera.json`.
+Mientras tanto, el estado más reciente guardado está en `carrera.json` (`meta.estado_actual`).
+
+**Pilotos restantes:** Mariano (22-23, 26-27), Gonzalo (24-25, 31-32), Guille (28-30). Fufo y Sebas ya cumplieron su parte nocturna.
 
 ---
 
@@ -109,25 +115,29 @@ siguiente, y te da la frase para cantar por radio. Para volcar al Google Sheet, 
 
 ## 🔭 Plan de stints (puede moverse con cada parada)
 
+Horas Madrid re-ancladas a las 04:53 con paces reales. REAL = ya corrido, PLAN = estimado.
 ```
-13 Guille  00:30-01:17  set 5 (3/3)  → nuevos set 6, cede a Fufo  [v133]
-14 Fufo    01:17-02:03  set 6 (1/2)  noche
-15 Fufo    02:03-02:50  set 6 (2/2)  → nuevos set 7, cede a Sebas
-16 Sebas   02:50→02:36  set 7 (1/2)  ⏰ CAMBIO HORARIO 03:00→02:00
-17 Sebas   02:36-03:23  set 7 (2/2)  → nuevos set 8, cede a Fufo
-18 Fufo    03:23-04:09  set 8 (1/2)
-19 Fufo    04:09-04:56  set 8 (2/2)  → nuevos set 9, cede a Sebas
-20 Sebas   04:56-05:42  set 9 (1/2)
-21 Sebas   05:42-06:29  set 9 (2/2)  → nuevos set 10, cede a Mariano
-22 Mariano 06:29-07:15  set 10 (1/2) amanece - desgaste debería subir
-23 Mariano 07:15-08:01  set 10 (2/2) → nuevos set 11, cede a Gonzalo
-24 Gonzalo 08:01-08:48  set 11 (1/2)
-25 Gonzalo 08:48-09:34  set 11 (2/2) → nuevos set 12, cede a Mariano
-26 Mariano 09:34-10:21  set 12 (1/3) TRIPLE de día
-27 Mariano 10:21-11:07  set 12 (2/3) → cede a Guille
-28 Guille  11:07-11:54  set 12 (3/3) → nuevos set 13
-29 Guille  11:54-12:40  set 13 (1/2)
-30 Guille  12:40-13:27  set 13 (2/2) → nuevos set 14 (último), cede a Gonzalo
-31 Gonzalo 13:27-14:13  set 14 (1/2)
-32 Gonzalo 14:13-15:00  set 14 (2/2) → bandera a cuadros ~15:00
+REAL — noche (ya corrido):
+13 Guille  01:18  set 5 (3/3)  v133  nuevos set 6, cede a Fufo
+14 Fufo    02:04  set 6 (1/2)  v144  sin cambio (desgaste contaminado)
+15 Fufo    02:51  set 6 (2/2)  v155  nuevos set 7 + reparación, cede a Sebas
+16 Sebas   02:37  set 7 (1/2)  v166  ⏰ cambio horario CEST→CET en este tramo
+17 Sebas   03:24  set 7 (2/2)  v177  nuevos set 8, cede a Fufo
+18 Fufo    04:10  set 8 (1/2)  v188  sin cambio
+19 Fufo    04:53  set 8 (2/2)  v199  nuevos set 9, cede a Sebas
+20 Sebas   04:54  set 9 (1/2)  v210  sin cambio
+21 Sebas   05:40  set 9 (2/2)  v221  nuevos set 10, cede a Mariano  ← TRASPASO
+
+PLAN — resto (estimado):
+22 Mariano 06:25  set 10 (1/2)  EN CURSO · amanece, desgaste debería subir
+23 Mariano 07:11  set 10 (2/2)  → nuevos set 11, cede a Gonzalo
+24 Gonzalo 07:57  set 11 (1/2)
+25 Gonzalo 08:42  set 11 (2/2)  → nuevos set 12, cede a Mariano
+26 Mariano 09:27  set 12 (1/3)  TRIPLE de día
+27 Mariano 10:12  set 12 (2/3)  → cede a Guille
+28 Guille  10:58  set 12 (3/3)  → nuevos set 13
+29 Guille  11:43  set 13 (1/2)
+30 Guille  12:27  set 13 (2/2)  → nuevos set 14 (último), cede a Gonzalo
+31 Gonzalo 13:12  set 14 (1/2)
+32 Gonzalo 13:57  set 14 (2/2)  → bandera a cuadros ~15:00
 ```

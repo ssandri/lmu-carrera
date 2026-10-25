@@ -30,15 +30,17 @@
       "experimento_abierto": "medir desgaste de noche (stints ~13-21) vs dia. Primer dato nocturno: cierre triple set 5 (stint 13, v133)."
     },
     "estado_actual": {
-      "momento": "dom 25-oct. Hora REAL ~03:3x (ya pasado el cambio de horario a CET). Clock del JUEGO ~04:5x. OJO: los dos relojes NO coinciden, trackear por separado.",
-      "stint_en_curso": 19,
+      "momento": "dom 25-oct ~06:25 Madrid CET. TRASPASO: Sebas cerro su doble (v221) y cedio a Mariano. Sebas se va a dormir.",
+      "stint_en_curso": 22,
       "posicion": 24,
-      "detalle": "Fufo al volante, 2o uso del set 8 (salio v189). Cerro el 1er uso del set 8 en v188 (desgaste 86-88-89-88).",
-      "proximo_evento": "stint 19 cierre (~v200): Fufo cierra el doble del set 8 -> neumaticos nuevos (set 9) + cede a Sebas.",
+      "detalle": "Mariano al volante con set 10 nuevo (arranco ~v222). Sebas cerro el doble del set 9 en v221 (68-71-75-75). Quedan stints 22-32.",
+      "proximo_evento": "stint 23 (~v243): Mariano cierra el doble del set 10 -> neumaticos nuevos (set 11) + cede a Gonzalo. Amanece en este tramo.",
       "clima": "Noche, pista seca a maximo agarre. Condiciones favorables de desgaste.",
       "track_limits_actual": "7.75/12 (al llegar a 12 = Drive-Through). SUBIENDO rapido (6.5 -> 7.75). ALERTA: a este ritmo llegamos a 12 antes de bandera. Avisar FUERTE a pilotos de no pisar pianos/salirse.",
       "dano": "Sin dano pendiente (Fufo reparo el golpe en el stint 15).",
-      "inventario_neumaticos": "Tras montar el set 8 (Fufo, v178) quedan ~26 nuevos de reserva. El plan consume 24 mas (6 cambios de 4: sets 9-14) hasta bandera -> sobran ~2. CUADRA, justo pero alcanza.",
+      "proyeccion_laps": "A las 04:53 Madrid (v199, ~13.9h corridas): MFD proyectaba 344 laps a las 04:32. Con paces reales por piloto (Mariano 4:04, Guille 3:59, Gonzalo 4:00, Fufo 4:06, Sebas 4:04 - APROX) el stint 32 cierra ~13:57 Madrid con ~342 laps y bandera a las 15:00 -> SE COMPLETAN LOS 32 STINTS con ~1h de margen (caben ~10 laps mas en ese hueco). Revisar en cada parada.",
+      "horarios_reanclados": "Horarios de stints 20-32 recalculados a las 04:53:30 Madrid con paces reales por piloto (aprox) + paradas (~50s energia, +12s si cambia 4 ruedas). Son ESTIMACION, re-anclar con la hora real de cada entrada.",
+      "inventario_neumaticos": "Tras montar el set 9 (v200) quedan ~22 nuevos de reserva. El plan consume 20 mas (5 cambios de 4: sets 10-14) hasta bandera -> sobran ~2. CUADRA.",
       "experimento_nocturno": "CONCLUSION PRELIMINAR (set 7 de Sebas, doble limpio): stint 16 FL 85 tras ~11 laps y stint 17 FL 69 al cierre del doble (22 laps) -> ambos dan ~1.4 %/vuelta en el FL. De noche NO desgasta menos (incluso algo mas que el ~1.15 de dia). Dos datos consistentes. Set 6 (Fufo) descartado por contaminado. IMPLICACION: a ~1.4%/v un triple nocturno cerraria el FL ~53% (bajo umbral 64) -> mantener dobles de noche, los triples solo de dia como estaba.",
       "secuencia_laps_entrada": [
         11,
@@ -56,10 +58,13 @@
         133,
         144,
         155,
-        177
+        166,
+        177,
+        188,
+        199
       ]
     },
-    "horarios": "Tiempos de referencia en UTC. Largada sab 24-oct 14:00:00Z (= 16:00 Madrid CEST). Cada stint: inicio_utc = largada + (N-1)*46.5 min (PLAN teorico, no sello real de cada parada; el dato duro de los stints corridos es lap_entrada). Al imprimir se muestra en hora de Madrid: CEST (UTC+2) hasta el dom 25-oct 01:00Z, luego CET (UTC+1) -> el cambio de horario 03:00->02:00 se aplica solo. clock_juego = reloj interno del simulador (NO coincide con el real), campo informativo aparte."
+    "horarios": "Tiempos de referencia en UTC. Largada sab 24-oct 14:00:00Z (= 16:00 Madrid CEST). Al imprimir se muestra en hora de Madrid: CEST (UTC+2) hasta el dom 25-oct 01:00Z, luego CET (UTC+1) -> el cambio de horario 03:00->02:00 se aplica solo. RE-ANCLAJE: cuando el usuario pasa la hora REAL de Madrid de una entrada, se calcula el tiempo transcurrido desde las 16:00 (restando el salto CEST->CET) y el ritmo real min/stint = transcurrido / stints completados; con ese ritmo se reproyectan los inicio_utc de los stints futuros (mas fiel que el 46.5 min teorico, arrastra el desfase de paradas/reparaciones). clock_juego = reloj interno del simulador (NO coincide con el real), campo informativo aparte."
   },
   "stints": [
     {
@@ -433,61 +438,61 @@
       "uso": "2/2",
       "accion_final": "neumaticos nuevos",
       "laps": 11,
-      "lap_entrada": null,
+      "lap_entrada": 199,
       "desgaste_entrada": {
-        "FL": null,
-        "FR": null,
-        "RL": null,
-        "RR": null
+        "FL": 73,
+        "FR": 77,
+        "RL": 79,
+        "RR": 78
       },
-      "notas": "EN CURSO. Fufo 2o uso set 8 (salio v189). Cierra el DOBLE del set 8. Al final monta set 9 y cede a Sebas"
+      "notas": "REAL. Fufo cierra DOBLE set 8. Entra v199 a las 04:53:30 Madrid (ANCLA horaria). Desgaste 73-77-79-78. Monta set 9 nuevo, cede a Sebas"
     },
     {
       "stint": 20,
-      "estado": "plan",
+      "estado": "real",
       "piloto": "Sebas",
       "piloto_entrante": "Sebas",
-      "inicio_utc": "2026-10-25T04:43:30Z",
+      "inicio_utc": "2026-10-25T03:54:32Z",
       "clock_juego": null,
       "set": 9,
       "uso": "1/2",
-      "accion_final": "sin cambio",
+      "accion_final": "sin cambio (solo energia)",
       "laps": 11,
-      "lap_entrada": null,
+      "lap_entrada": 210,
       "desgaste_entrada": {
-        "FL": null,
-        "FR": null,
-        "RL": null,
-        "RR": null
+        "FL": 83,
+        "FR": 85,
+        "RL": 87,
+        "RR": 86
       },
-      "notas": ""
+      "notas": "REAL. Sebas 1er stint con set 9 nuevo (arranco ~v200). Entra v210, desgaste 83-85-87-86 (~1.5%/v FL, limpio). Solo energia, sigue. Al cerrar stint 21 monta set 10 y cede a Mariano (traspaso ~06:25 Madrid)"
     },
     {
       "stint": 21,
-      "estado": "plan",
+      "estado": "real",
       "piloto": "Sebas",
       "piloto_entrante": "Mariano",
-      "inicio_utc": "2026-10-25T05:30:00Z",
+      "inicio_utc": "2026-10-25T04:40:06Z",
       "clock_juego": null,
       "set": 9,
       "uso": "2/2",
       "accion_final": "neumaticos nuevos",
       "laps": 11,
-      "lap_entrada": null,
+      "lap_entrada": 221,
       "desgaste_entrada": {
-        "FL": null,
-        "FR": null,
-        "RL": null,
-        "RR": null
+        "FL": 68,
+        "FR": 71,
+        "RL": 75,
+        "RR": 75
       },
-      "notas": "Cambio a Mariano. Nuevos set 10"
+      "notas": "REAL. Sebas cierra DOBLE set 9 (v221, desgaste 68-71-75-75, ~1.45%/v FL limpio). Monta set 10 nuevo, cede a Mariano. TRASPASO: aqui Sebas se va a dormir (~06:25 Madrid)"
     },
     {
       "stint": 22,
-      "estado": "plan",
+      "estado": "real",
       "piloto": "Mariano",
       "piloto_entrante": "Mariano",
-      "inicio_utc": "2026-10-25T06:16:30Z",
+      "inicio_utc": "2026-10-25T05:25:52Z",
       "clock_juego": null,
       "set": 10,
       "uso": "1/2",
@@ -500,14 +505,14 @@
         "RL": null,
         "RR": null
       },
-      "notas": "Amanece - desgaste deberia volver a subir"
+      "notas": "EN CURSO. Mariano toma el relevo con set 10 nuevo (arranco ~v222). Amanece pronto - desgaste deberia volver a subir hacia ~1.5%/v de dia"
     },
     {
       "stint": 23,
       "estado": "plan",
       "piloto": "Mariano",
       "piloto_entrante": "Gonzalo",
-      "inicio_utc": "2026-10-25T07:03:00Z",
+      "inicio_utc": "2026-10-25T06:11:26Z",
       "clock_juego": null,
       "set": 10,
       "uso": "2/2",
@@ -527,7 +532,7 @@
       "estado": "plan",
       "piloto": "Gonzalo",
       "piloto_entrante": "Gonzalo",
-      "inicio_utc": "2026-10-25T07:49:30Z",
+      "inicio_utc": "2026-10-25T06:57:12Z",
       "clock_juego": null,
       "set": 11,
       "uso": "1/2",
@@ -547,7 +552,7 @@
       "estado": "plan",
       "piloto": "Gonzalo",
       "piloto_entrante": "Mariano",
-      "inicio_utc": "2026-10-25T08:36:00Z",
+      "inicio_utc": "2026-10-25T07:42:02Z",
       "clock_juego": null,
       "set": 11,
       "uso": "2/2",
@@ -567,7 +572,7 @@
       "estado": "plan",
       "piloto": "Mariano",
       "piloto_entrante": "Mariano",
-      "inicio_utc": "2026-10-25T09:22:30Z",
+      "inicio_utc": "2026-10-25T08:27:04Z",
       "clock_juego": null,
       "set": 12,
       "uso": "1/3",
@@ -587,7 +592,7 @@
       "estado": "plan",
       "piloto": "Mariano",
       "piloto_entrante": "Guille",
-      "inicio_utc": "2026-10-25T10:09:00Z",
+      "inicio_utc": "2026-10-25T09:12:38Z",
       "clock_juego": null,
       "set": 12,
       "uso": "2/3",
@@ -607,7 +612,7 @@
       "estado": "plan",
       "piloto": "Guille",
       "piloto_entrante": "Guille",
-      "inicio_utc": "2026-10-25T10:55:30Z",
+      "inicio_utc": "2026-10-25T09:58:12Z",
       "clock_juego": null,
       "set": 12,
       "uso": "3/3",
@@ -627,7 +632,7 @@
       "estado": "plan",
       "piloto": "Guille",
       "piloto_entrante": "Guille",
-      "inicio_utc": "2026-10-25T11:42:00Z",
+      "inicio_utc": "2026-10-25T10:43:03Z",
       "clock_juego": null,
       "set": 13,
       "uso": "1/2",
@@ -647,7 +652,7 @@
       "estado": "plan",
       "piloto": "Guille",
       "piloto_entrante": "Gonzalo",
-      "inicio_utc": "2026-10-25T12:28:30Z",
+      "inicio_utc": "2026-10-25T11:27:42Z",
       "clock_juego": null,
       "set": 13,
       "uso": "2/2",
@@ -667,7 +672,7 @@
       "estado": "plan",
       "piloto": "Gonzalo",
       "piloto_entrante": "Gonzalo",
-      "inicio_utc": "2026-10-25T13:15:00Z",
+      "inicio_utc": "2026-10-25T12:12:33Z",
       "clock_juego": null,
       "set": 14,
       "uso": "1/2",
@@ -687,7 +692,7 @@
       "estado": "plan",
       "piloto": "Gonzalo",
       "piloto_entrante": null,
-      "inicio_utc": "2026-10-25T14:01:30Z",
+      "inicio_utc": "2026-10-25T12:57:23Z",
       "clock_juego": null,
       "set": 14,
       "uso": "2/2",
