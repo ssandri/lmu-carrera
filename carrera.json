@@ -30,17 +30,17 @@
       "experimento_abierto": "medir desgaste de noche (stints ~13-21) vs dia. Primer dato nocturno: cierre triple set 5 (stint 13, v133)."
     },
     "estado_actual": {
-      "momento": "dom 25-oct ~13:xx Madrid CET. Gonzalo entra a pits v331 (ultima parada de energia).",
-      "stint_en_curso": 31,
+      "momento": "dom 25-oct ~13:xx Madrid CET. Gonzalo recargo FULL en v334 (adelanto por incidente Porsche).",
+      "stint_en_curso": 32,
       "posicion": 24,
-      "detalle": "Gonzalo en pista con set 14 (ULTIMO) casi nuevo. Entra v331 a repostar. Ruedas v330: 89-91-92-92. Guille cerro el set 13 en ~v320.",
-      "proximo_evento": "Gonzalo repostó v331 (100% energia, sin ruedas). Stint 31: hace LIFT & COAST para ahorrar energia. DECISION: a 1 vuelta del cierre del stint 31 mirar el ESTIMADO TOTAL de vueltas (MFD) -> si con el ahorro el tanque llega a bandera, 1 sola parada (termina sin parar); si no, splash corto al final. Esperar ese dato.",
-      "clima": "Dia, pista seca en optimas condiciones.",
+      "detalle": "Gonzalo en pista con set 14 (ULTIMO). Aprovecho un incidente en las Porsche (v334) para entrar y cargar energia al 100%. Ruedas sin cambiar (aguantan). Estimado total bajo a 345 laps.",
+      "proximo_evento": "GONZALO VA DIRECTO A BANDERA (~v345). Con el full de v334 y total 345 -> faltan 11 laps, CABEN en 1 tanque (a 8.9%/lap margen +0.2; con L&C suave +1.5). NO hace falta splash. Se ahorra la 2a parada. L&C suave de seguridad.",
+      "clima": "Dia, pista seca. Incidente en las Porsche v334 (otros coches).",
       "track_limits_actual": "8.5/12 (margen de 3.5 avisos antes de Drive-Through).",
       "dano": "Sin dano pendiente.",
-      "proyeccion_laps": "En v331 de ~346.1 estimadas. Faltan ~15 laps tras la parada. ALERTA ENERGIA: 15 laps > 1 tanque (~12.5 a 8%/lap o ~13.7 a 7.3%/lap) -> probable 2a parada (splash de 2-3 laps ~v343) o lift&coast final. CONFIRMAR consumo real por meta.",
-      "horarios_reanclados": "Paradas estimadas: v331 (ahora), splash ~v343 si hace falta, bandera ~15:00.",
-      "inventario_neumaticos": "Set 14 ya montado. Quedan solo los 2 neumaticos de reserva SIN usar. NO se cambian ruedas hasta el final (aguantan).",
+      "proyeccion_laps": "Estimado total 345 (bajo de 346). Recarga full en v334 -> faltan 11 laps a bandera. 11 laps entran en 1 tanque -> SIN splash. Confirmar con L&C suave que no se queda corto en la ultima vuelta.",
+      "horarios_reanclados": "Gonzalo rueda directo a bandera ~15:00 (v345). Sin mas paradas.",
+      "inventario_neumaticos": "Set 14 montado, aguanta hasta bandera. Quedan los 2 neumaticos de reserva SIN usar (no se necesitaron).",
       "experimento_nocturno": "CONCLUSION PRELIMINAR (set 7 de Sebas, doble limpio): stint 16 FL 85 tras ~11 laps y stint 17 FL 69 al cierre del doble (22 laps) -> ambos dan ~1.4 %/vuelta en el FL. De noche NO desgasta menos (incluso algo mas que el ~1.15 de dia). Dos datos consistentes. Set 6 (Fufo) descartado por contaminado. IMPLICACION: a ~1.4%/v un triple nocturno cerraria el FL ~53% (bajo umbral 64) -> mantener dobles de noche, los triples solo de dia como estaba.",
       "secuencia_laps_entrada": [
         11,
@@ -73,7 +73,7 @@
         298,
         309,
         320,
-        331
+        334
       ]
     },
     "horarios": "Tiempos de referencia en UTC. Largada sab 24-oct 14:00:00Z (= 16:00 Madrid CEST). Al imprimir se muestra en hora de Madrid: CEST (UTC+2) hasta el dom 25-oct 01:00Z, luego CET (UTC+1) -> el cambio de horario 03:00->02:00 se aplica solo. RE-ANCLAJE: cuando el usuario pasa la hora REAL de Madrid de una entrada, se calcula el tiempo transcurrido desde las 16:00 (restando el salto CEST->CET) y el ritmo real min/stint = transcurrido / stints completados; con ese ritmo se reproyectan los inicio_utc de los stints futuros (mas fiel que el 46.5 min teorico, arrastra el desfase de paradas/reparaciones). clock_juego = reloj interno del simulador (NO coincide con el real), campo informativo aparte."
@@ -688,16 +688,16 @@
       "clock_juego": null,
       "set": 14,
       "uso": "1/2",
-      "accion_final": "sin cambio (solo energia)",
+      "accion_final": "sin cambio (solo energia, FULL)",
       "laps": 11,
-      "lap_entrada": 331,
+      "lap_entrada": 334,
       "desgaste_entrada": {
         "FL": 89,
         "FR": 91,
         "RL": 92,
         "RR": 92
       },
-      "notas": "EN CURSO/PARADA v331. Gonzalo entra v331 con ruedas 89-91-92-92 (set 14 casi nuevo, aguantan hasta el final SIN cambiar). SOLO ENERGIA: cargar al 100% (decision: seguridad). Faltan ~15 laps a bandera (v346). OJO: 15 laps > 1 tanque (~12.5 a 8%/lap) -> posible SPLASH final ~v343 si no llega. Vigilar energia por meta"
+      "notas": "REAL. Gonzalo adelanta la parada a v334 aprovechando un incidente en las Porsche. Carga energia FULL (100%), sin tocar ruedas (89-91-92-92, aguantan). Con el full + total 345 -> termina a bandera SIN otra parada (11 laps caben en 1 tanque)"
     },
     {
       "stint": 32,
@@ -717,7 +717,7 @@
         "RL": null,
         "RR": null
       },
-      "notas": "Final a bandera. Reserva: 2 neumaticos sueltos (medio set) SIN usar, para pinchazo"
+      "notas": "Final a bandera (~v345) SIN parada: Gonzalo cargo full en v334 y rueda directo. L&C suave de seguridad. Reserva: 2 neumaticos sueltos SIN usar, no se necesitaron"
     }
   ]
 }
