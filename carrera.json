@@ -30,17 +30,17 @@
       "experimento_abierto": "medir desgaste de noche (stints ~13-21) vs dia. Primer dato nocturno: cierre triple set 5 (stint 13, v133)."
     },
     "estado_actual": {
-      "momento": "dom 25-oct ~12:32 Madrid CET. En vivo en Stint 30 (v310).",
-      "stint_en_curso": 30,
+      "momento": "dom 25-oct ~13:xx Madrid CET. Gonzalo entra a pits v331 (ultima parada de energia).",
+      "stint_en_curso": 31,
       "posicion": 24,
-      "detalle": "Guille en pista con set 13 uso 2/2 (cierre de doble). Arranco en v310 tras parada v309 (desgaste 84-87-89-89). Solo energia.",
-      "proximo_evento": "Parada v320 (~13:17): Cierre doble set 13 -> 4 NEUMATICOS NUEVOS (Set 14, ULTIMO SET) + relevo a Gonzalo.",
+      "detalle": "Gonzalo en pista con set 14 (ULTIMO) casi nuevo. Entra v331 a repostar. Ruedas v330: 89-91-92-92. Guille cerro el set 13 en ~v320.",
+      "proximo_evento": "Gonzalo repostó v331 (100% energia, sin ruedas). Stint 31: hace LIFT & COAST para ahorrar energia. DECISION: a 1 vuelta del cierre del stint 31 mirar el ESTIMADO TOTAL de vueltas (MFD) -> si con el ahorro el tanque llega a bandera, 1 sola parada (termina sin parar); si no, splash corto al final. Esperar ese dato.",
       "clima": "Dia, pista seca en optimas condiciones.",
       "track_limits_actual": "8.5/12 (margen de 3.5 avisos antes de Drive-Through).",
       "dano": "Sin dano pendiente.",
-      "proyeccion_laps": "En v310 de ~345 estimadas. Quedan 35 vueltas. Bandera ~15:00 CET.",
-      "horarios_reanclados": "Paradas estimadas: v320 (~13:17), v331 (~14:02), v342 (~14:47), bandera ~15:00.",
-      "inventario_neumaticos": "Tras montar Set 13 quedan 6 nuevos: Set 14 (4 ruedas) para v320 + 2 de reserva para pinchazo. CUADRA AL MILIMETRO.",
+      "proyeccion_laps": "En v331 de ~346.1 estimadas. Faltan ~15 laps tras la parada. ALERTA ENERGIA: 15 laps > 1 tanque (~12.5 a 8%/lap o ~13.7 a 7.3%/lap) -> probable 2a parada (splash de 2-3 laps ~v343) o lift&coast final. CONFIRMAR consumo real por meta.",
+      "horarios_reanclados": "Paradas estimadas: v331 (ahora), splash ~v343 si hace falta, bandera ~15:00.",
+      "inventario_neumaticos": "Set 14 ya montado. Quedan solo los 2 neumaticos de reserva SIN usar. NO se cambian ruedas hasta el final (aguantan).",
       "experimento_nocturno": "CONCLUSION PRELIMINAR (set 7 de Sebas, doble limpio): stint 16 FL 85 tras ~11 laps y stint 17 FL 69 al cierre del doble (22 laps) -> ambos dan ~1.4 %/vuelta en el FL. De noche NO desgasta menos (incluso algo mas que el ~1.15 de dia). Dos datos consistentes. Set 6 (Fufo) descartado por contaminado. IMPLICACION: a ~1.4%/v un triple nocturno cerraria el FL ~53% (bajo umbral 64) -> mantener dobles de noche, los triples solo de dia como estaba.",
       "secuencia_laps_entrada": [
         11,
@@ -71,7 +71,9 @@
         276,
         287,
         298,
-        309
+        309,
+        320,
+        331
       ]
     },
     "horarios": "Tiempos de referencia en UTC. Largada sab 24-oct 14:00:00Z (= 16:00 Madrid CEST). Al imprimir se muestra en hora de Madrid: CEST (UTC+2) hasta el dom 25-oct 01:00Z, luego CET (UTC+1) -> el cambio de horario 03:00->02:00 se aplica solo. RE-ANCLAJE: cuando el usuario pasa la hora REAL de Madrid de una entrada, se calcula el tiempo transcurrido desde las 16:00 (restando el salto CEST->CET) y el ritmo real min/stint = transcurrido / stints completados; con ese ritmo se reproyectan los inicio_utc de los stints futuros (mas fiel que el 46.5 min teorico, arrastra el desfase de paradas/reparaciones). clock_juego = reloj interno del simulador (NO coincide con el real), campo informativo aparte."
@@ -668,34 +670,34 @@
       "uso": "2/2",
       "accion_final": "neumaticos nuevos (set 14) + energia",
       "laps": 11,
-      "lap_entrada": null,
+      "lap_entrada": 320,
       "desgaste_entrada": {
         "FL": null,
         "FR": null,
         "RL": null,
         "RR": null
       },
-      "notas": "EN CURSO. Guille cierra su tanda de 3 stints y el doble del set 13 (v310-v320). Parada v320: 4 neumaticos nuevos (Set 14 - ULTIMO SET) + relevo a Gonzalo"
+      "notas": "REAL. Guille cierra su tanda de 3 stints y el doble del set 13 (~v320, 11 laps, sin dato de desgaste). Monta set 14 (ULTIMO SET) + relevo a Gonzalo"
     },
     {
       "stint": 31,
-      "estado": "plan",
+      "estado": "real",
       "piloto": "Gonzalo",
       "piloto_entrante": "Gonzalo",
       "inicio_utc": "2026-10-25T12:12:33Z",
       "clock_juego": null,
       "set": 14,
       "uso": "1/2",
-      "accion_final": "sin cambio",
+      "accion_final": "sin cambio (solo energia)",
       "laps": 11,
-      "lap_entrada": null,
+      "lap_entrada": 331,
       "desgaste_entrada": {
-        "FL": null,
-        "FR": null,
-        "RL": null,
-        "RR": null
+        "FL": 89,
+        "FR": 91,
+        "RL": 92,
+        "RR": 92
       },
-      "notas": "ULTIMA PARADA. Regla energia: calcular (vueltas restantes estimadas + 2 de margen) * 8.9%. No llenar al 100% para ahorrar segundos en box. Sin cambio de ruedas ni piloto (remata Gonzalo)"
+      "notas": "EN CURSO/PARADA v331. Gonzalo entra v331 con ruedas 89-91-92-92 (set 14 casi nuevo, aguantan hasta el final SIN cambiar). SOLO ENERGIA: cargar al 100% (decision: seguridad). Faltan ~15 laps a bandera (v346). OJO: 15 laps > 1 tanque (~12.5 a 8%/lap) -> posible SPLASH final ~v343 si no llega. Vigilar energia por meta"
     },
     {
       "stint": 32,
