@@ -30,16 +30,16 @@
       "experimento_abierto": "medir desgaste de noche (stints ~13-21) vs dia. Primer dato nocturno: cierre triple set 5 (stint 13, v133)."
     },
     "estado_actual": {
-      "momento": "dom 25-oct. Hora REAL ~03:26 (ya pasado el cambio de horario a CET). Clock del JUEGO: 04:15. OJO: los dos relojes NO coinciden, trackear por separado.",
-      "stint_en_curso": 18,
+      "momento": "dom 25-oct. Hora REAL ~03:3x (ya pasado el cambio de horario a CET). Clock del JUEGO ~04:5x. OJO: los dos relojes NO coinciden, trackear por separado.",
+      "stint_en_curso": 19,
       "posicion": 24,
-      "detalle": "Fufo al volante con set 8 nuevo (arranco v178). Sebas cerro el doble del set 7 (stints 16-17, entra v177, desgaste sin dato). Cambio de horario 03:00->02:00 ya aplicado en este tramo.",
-      "proximo_evento": "stint 19 (~v200): Fufo cierra el doble del set 8 -> neumaticos nuevos (set 9) + cede a Sebas.",
+      "detalle": "Fufo al volante, 2o uso del set 8 (salio v189). Cerro el 1er uso del set 8 en v188 (desgaste 86-88-89-88).",
+      "proximo_evento": "stint 19 cierre (~v200): Fufo cierra el doble del set 8 -> neumaticos nuevos (set 9) + cede a Sebas.",
       "clima": "Noche, pista seca a maximo agarre. Condiciones favorables de desgaste.",
-      "track_limits_actual": "6.5/12 al ultimo dato (al llegar a 12 = Drive-Through). Avisar a pilotos, queda media carrera.",
+      "track_limits_actual": "7.75/12 (al llegar a 12 = Drive-Through). SUBIENDO rapido (6.5 -> 7.75). ALERTA: a este ritmo llegamos a 12 antes de bandera. Avisar FUERTE a pilotos de no pisar pianos/salirse.",
       "dano": "Sin dano pendiente (Fufo reparo el golpe en el stint 15).",
       "inventario_neumaticos": "Tras montar el set 8 (Fufo, v178) quedan ~26 nuevos de reserva. El plan consume 24 mas (6 cambios de 4: sets 9-14) hasta bandera -> sobran ~2. CUADRA, justo pero alcanza.",
-      "experimento_nocturno": "Sin dato limpio aun. Set 6 contaminado (perdidas+golpe Fufo), set 7 (Sebas) sin dato reportado. Pedir desgaste limpio en la proxima entrada util.",
+      "experimento_nocturno": "CONCLUSION PRELIMINAR (set 7 de Sebas, doble limpio): stint 16 FL 85 tras ~11 laps y stint 17 FL 69 al cierre del doble (22 laps) -> ambos dan ~1.4 %/vuelta en el FL. De noche NO desgasta menos (incluso algo mas que el ~1.15 de dia). Dos datos consistentes. Set 6 (Fufo) descartado por contaminado. IMPLICACION: a ~1.4%/v un triple nocturno cerraria el FL ~53% (bajo umbral 64) -> mantener dobles de noche, los triples solo de dia como estaba.",
       "secuencia_laps_entrada": [
         11,
         22,
@@ -373,14 +373,14 @@
       "uso": "1/2",
       "accion_final": "sin cambio (solo energia)",
       "laps": 11,
-      "lap_entrada": null,
+      "lap_entrada": 166,
       "desgaste_entrada": {
-        "FL": null,
-        "FR": null,
-        "RL": null,
-        "RR": null
+        "FL": 85,
+        "FR": 86,
+        "RL": 88,
+        "RR": 87
       },
-      "notas": "REAL. Sebas 1er stint con set 7 nuevo (salio v156). Parada solo energia, sigue. CAMBIO HORARIO 03:00->02:00 cae por este tramo"
+      "notas": "REAL. Sebas 1er stint con set 7 nuevo (salio v156). Entra v166, desgaste 85-86-88-87 (~11 laps -> FL ~1.4%/v). Parada solo energia, sigue. Dato nocturno LIMPIO (sin golpes). CAMBIO HORARIO 03:00->02:00 cae por este tramo"
     },
     {
       "stint": 17,
@@ -395,12 +395,12 @@
       "laps": 11,
       "lap_entrada": 177,
       "desgaste_entrada": {
-        "FL": null,
-        "FR": null,
-        "RL": null,
-        "RR": null
+        "FL": 69,
+        "FR": 71,
+        "RL": 75,
+        "RR": 74
       },
-      "notas": "REAL. Sebas cierra DOBLE set 7 (sus 2 stints). Entra v177, desgaste SIN DATO. Monta set 8 nuevo, cede a Fufo (que sale v178)"
+      "notas": "REAL. Sebas cierra DOBLE set 7 (sus 2 stints). Entra v177, desgaste 69-71-75-74 al cierre del doble (22 laps -> FL ~1.4%/v). Dato nocturno LIMPIO y consistente con stint 16. Monta set 8 nuevo, cede a Fufo (que sale v178)"
     },
     {
       "stint": 18,
@@ -411,20 +411,20 @@
       "clock_juego": "04:15",
       "set": 8,
       "uso": "1/2",
-      "accion_final": "sin cambio",
+      "accion_final": "sin cambio (solo energia)",
       "laps": 11,
-      "lap_entrada": null,
+      "lap_entrada": 188,
       "desgaste_entrada": {
-        "FL": null,
-        "FR": null,
-        "RL": null,
-        "RR": null
+        "FL": 86,
+        "FR": 88,
+        "RL": 89,
+        "RR": 88
       },
-      "notas": "EN CURSO. Fufo arranco v178 con set 8 nuevo. Al cerrar (stint 19) monta set 9 y cede a Sebas"
+      "notas": "REAL. Fufo 1er uso set 8 (arranco v178). Entra v188, desgaste 86-88-89-88 (~1.3%/v FL, consistente nocturno). Solo energia, sigue Fufo. Al cerrar (stint 19) monta set 9 y cede a Sebas"
     },
     {
       "stint": 19,
-      "estado": "plan",
+      "estado": "real",
       "piloto": "Fufo",
       "piloto_entrante": "Sebas",
       "inicio_utc": "2026-10-25T03:57:00Z",
@@ -440,7 +440,7 @@
         "RL": null,
         "RR": null
       },
-      "notas": "Cambio a Sebas. Nuevos set 9"
+      "notas": "EN CURSO. Fufo 2o uso set 8 (salio v189). Cierra el DOBLE del set 8. Al final monta set 9 y cede a Sebas"
     },
     {
       "stint": 20,
