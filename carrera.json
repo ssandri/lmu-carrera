@@ -2,10 +2,16 @@
   "meta": {
     "descripcion": "FUENTE UNICA VIVA de la carrera. Mezcla pasado (estado:real) y futuro (estado:plan). Reemplaza al antiguo plan-vivo.csv. El pit wall actualiza este archivo en cada parada.",
     "coche": "Lexus RC F LMGT3 #397",
-    "pilotos": ["Gonzalo", "Guillermo", "Mariano", "Fufo", "Sebas"],
-    "largada": "2026-10-24 16:00",
-    "bandera_estimada": "2026-10-25 ~15:00 (hora nueva)",
-    "cambio_horario": "Dom 25-oct 03:00 CEST -> 02:00 CET. 24 h reales aunque el reloj marque 23 h. Anclado en stint 16.",
+    "pilotos": [
+      "Gonzalo",
+      "Guillermo",
+      "Mariano",
+      "Fufo",
+      "Sebas"
+    ],
+    "largada_utc": "2026-10-24T14:00:00Z",
+    "bandera_estimada_utc": "2026-10-25T14:01:30Z (= 15:01 Madrid CET)",
+    "cambio_horario": "Dom 25-oct 03:00 CEST -> 02:00 CET. Se aplica SOLO al convertir UTC->Madrid (frontera 01:00Z). 24 h reales aunque el reloj marque 23 h.",
     "neumaticos": {
       "total_unidades": 58,
       "sets_completos": 14.5,
@@ -24,49 +30,677 @@
       "experimento_abierto": "medir desgaste de noche (stints ~13-21) vs dia. Primer dato nocturno: cierre triple set 5 (stint 13, v133)."
     },
     "estado_actual": {
-      "momento": "dom 25-oct ~01:53 (clock in-game aprox)",
-      "stint_en_curso": 16,
+      "momento": "dom 25-oct. Hora REAL ~03:26 (ya pasado el cambio de horario a CET). Clock del JUEGO: 04:15. OJO: los dos relojes NO coinciden, trackear por separado.",
+      "stint_en_curso": 18,
       "posicion": 24,
-      "detalle": "Sebas set 7 uso 1/2, nuevos. Fufo cerro el doble del set 6 (stint 15, entra v144). El cambio de horario 03:00->02:00 cae en este tramo.",
-      "proximo_evento": "stint 17 (~v166): Sebas cierra el doble del set 7 -> neumaticos nuevos (set 8) + cede a Fufo.",
+      "detalle": "Fufo al volante con set 8 nuevo (arranco v178). Sebas cerro el doble del set 7 (stints 16-17, entra v177, desgaste sin dato). Cambio de horario 03:00->02:00 ya aplicado en este tramo.",
+      "proximo_evento": "stint 19 (~v200): Fufo cierra el doble del set 8 -> neumaticos nuevos (set 9) + cede a Sebas.",
       "clima": "Noche, pista seca a maximo agarre. Condiciones favorables de desgaste.",
-      "track_limits_actual": "5.25/12 al ultimo dato (al llegar a 12 = Drive-Through). Fufo tuvo perdidas en el stint 15 - confirmar si subio el contador.",
-      "experimento_nocturno": "PRIMER DATO OBTENIDO (set 6, doble, stint 15): FL 78 tras 22 laps = ~1.0 %/vuelta vs ~1.15 de dia. De noche desgasta algo menos. Dato algo contaminado por perdidas de Fufo. FL sobradisimo vs umbral 64.",
-      "secuencia_laps_entrada": [11, 22, 33, 44, 45, 56, 67, 78, 89, 100, 111, 122, 133, 144]
-    }
+      "track_limits_actual": "6.5/12 al ultimo dato (al llegar a 12 = Drive-Through). Avisar a pilotos, queda media carrera.",
+      "dano": "Sin dano pendiente (Fufo reparo el golpe en el stint 15).",
+      "inventario_neumaticos": "Tras montar el set 8 (Fufo, v178) quedan ~26 nuevos de reserva. El plan consume 24 mas (6 cambios de 4: sets 9-14) hasta bandera -> sobran ~2. CUADRA, justo pero alcanza.",
+      "experimento_nocturno": "Sin dato limpio aun. Set 6 contaminado (perdidas+golpe Fufo), set 7 (Sebas) sin dato reportado. Pedir desgaste limpio en la proxima entrada util.",
+      "secuencia_laps_entrada": [
+        11,
+        22,
+        33,
+        44,
+        45,
+        56,
+        67,
+        78,
+        89,
+        100,
+        111,
+        122,
+        133,
+        144,
+        155,
+        177
+      ]
+    },
+    "horarios": "Tiempos de referencia en UTC. Largada sab 24-oct 14:00:00Z (= 16:00 Madrid CEST). Cada stint: inicio_utc = largada + (N-1)*46.5 min (PLAN teorico, no sello real de cada parada; el dato duro de los stints corridos es lap_entrada). Al imprimir se muestra en hora de Madrid: CEST (UTC+2) hasta el dom 25-oct 01:00Z, luego CET (UTC+1) -> el cambio de horario 03:00->02:00 se aplica solo. clock_juego = reloj interno del simulador (NO coincide con el real), campo informativo aparte."
   },
   "stints": [
-    { "stint": 1,  "estado": "real", "piloto": "Gonzalo", "piloto_entrante": "Gonzalo", "horario": "16:00-16:46", "set": 1,  "uso": "1/2",       "accion_final": "solo energia",                      "laps": 11, "lap_entrada": 11,  "desgaste_entrada": { "FL": 82, "FR": 86, "RL": 87, "RR": 87 }, "notas": "Largada P22. Parada solo energia ~39 s. Ritmo 242.6 s. Sale v12 P20" },
-    { "stint": 2,  "estado": "real", "piloto": "Gonzalo", "piloto_entrante": "Fufo",    "horario": "16:46-17:32", "set": 1,  "uso": "2/2",       "accion_final": "neumaticos nuevos + energia",       "laps": 11, "lap_entrada": 22,  "desgaste_entrada": { "FL": 70, "FR": 77, "RL": 79, "RR": 79 }, "notas": "Cambio a Fufo. Nuevos set 2. Ritmo 242.9 s. Parado ~51 s" },
-    { "stint": 3,  "estado": "real", "piloto": "Fufo",    "piloto_entrante": "Fufo",    "horario": "17:32-18:19", "set": 2,  "uso": "1/2",       "accion_final": "solo energia",                      "laps": 11, "lap_entrada": 33,  "desgaste_entrada": { "FL": 87, "FR": 88, "RL": 92, "RR": 91 }, "notas": "Entra v33 sale v34. Pista mas fria - desgaste ~0.8%/vuelta. Desgaste medido en v36" },
-    { "stint": 4,  "estado": "real", "piloto": "Fufo",    "piloto_entrante": "Sebas",   "horario": "18:19-19:05", "set": 2,  "uso": "2/2",       "accion_final": "neumaticos nuevos + energia",       "laps": 11, "lap_entrada": 44,  "desgaste_entrada": { "FL": 76, "FR": 80, "RL": 86, "RR": 85 }, "notas": "Cambio a Sebas. Nuevos set 3. Parado ~51 s" },
-    { "stint": 5,  "estado": "real", "piloto": "Sebas",   "piloto_entrante": "Guille",  "horario": "19:05-~19:10","set": 3,  "uso": "arranque",  "accion_final": "parada - cambio a Guille",          "laps": 1,  "lap_entrada": 45,  "desgaste_entrada": { "FL": null, "FR": null, "RL": null, "RR": null }, "notas": "RECON tras CUELGUE PC. Mini-stint 1 lap del incidente + parada en pits. Estrena set 3. Cambio a Guille" },
-    { "stint": 6,  "estado": "real", "piloto": "Guille",  "piloto_entrante": "Sebas",   "horario": "~19:10-19:52","set": 3,  "uso": "1/2",       "accion_final": "sin cambio",                        "laps": 11, "lap_entrada": 56,  "desgaste_entrada": { "FL": 84, "FR": 85, "RL": 88, "RR": 86 }, "notas": "Guille 11 v set 3. Avisado L&C. Cambio a Sebas" },
-    { "stint": 7,  "estado": "real", "piloto": "Sebas",   "piloto_entrante": "Sebas",   "horario": "19:52-20:38", "set": 3,  "uso": "2/2",       "accion_final": "neumaticos nuevos",                 "laps": 11, "lap_entrada": 67,  "desgaste_entrada": { "FL": 85, "FR": 87, "RL": 89, "RR": 89 }, "notas": "Sebas 11 v set 3. Set 3 = DOBLE cerrado. Cambia a set 4 nuevo. Sebas sigue" },
-    { "stint": 8,  "estado": "real", "piloto": "Sebas",   "piloto_entrante": "Mariano", "horario": "20:38-21:25", "set": 4,  "uso": "1/3",       "accion_final": "sin cambio",                        "laps": 11, "lap_entrada": 78,  "desgaste_entrada": { "FL": 72, "FR": 75, "RL": 81, "RR": 80 }, "notas": "Sebas 11 v con set 4 nuevo. Cambio a Mariano. Set 4 pasa a TRIPLE" },
-    { "stint": 9,  "estado": "real", "piloto": "Mariano", "piloto_entrante": "Guille",  "horario": "21:25-22:11", "set": 4,  "uso": "2/3",       "accion_final": "sin cambio",                        "laps": 11, "lap_entrada": 89,  "desgaste_entrada": { "FL": null, "FR": null, "RL": null, "RR": null }, "notas": "Mariano 11 v set 4. Cambio a Guille" },
-    { "stint": 10, "estado": "real", "piloto": "Guille",  "piloto_entrante": "Guille",  "horario": "22:11-22:58", "set": 4,  "uso": "3/3",       "accion_final": "neumaticos nuevos",                 "laps": 11, "lap_entrada": 100, "desgaste_entrada": { "FL": null, "FR": null, "RL": null, "RR": null }, "notas": "Guille 11 v set 4 (cierre triple). Estrena set 5. Sin dato de desgaste" },
-    { "stint": 11, "estado": "real", "piloto": "Guille",  "piloto_entrante": "Guille",  "horario": "22:58-23:44", "set": 5,  "uso": "1/3",       "accion_final": "sin cambio",                        "laps": 11, "lap_entrada": 111, "desgaste_entrada": { "FL": null, "FR": null, "RL": null, "RR": null }, "notas": "11 v set 5. Sin dato de desgaste" },
-    { "stint": 12, "estado": "real", "piloto": "Guille",  "piloto_entrante": "Guille",  "horario": "23:44-00:30", "set": 5,  "uso": "2/3",       "accion_final": "sin cambio (solo energia)",         "laps": 11, "lap_entrada": 122, "desgaste_entrada": { "FL": null, "FR": null, "RL": null, "RR": null }, "notas": "EN CURSO. Entra v122. 11 v set 5. Desde aqui: trackear solo desgaste (energia validada ~8.9%/v)" },
-    { "stint": 13, "estado": "real", "piloto": "Guille",  "piloto_entrante": "Fufo",    "horario": "00:30-~01:07", "set": 5,  "uso": "3/3",      "accion_final": "neumaticos nuevos",                 "laps": 11, "lap_entrada": 133, "desgaste_entrada": { "FL": null, "FR": null, "RL": null, "RR": null }, "notas": "REAL. Cierre triple set 5 cumplido segun plan. Fufo sale v134 con set 6 nuevo. Pos 24. DESGASTE DE CIERRE NO REPORTADO (primer dato nocturno perdido)" },
-    { "stint": 14, "estado": "real", "piloto": "Fufo",    "piloto_entrante": "Fufo",    "horario": "~01:07-~01:53", "set": 6,  "uso": "1/2",      "accion_final": "sin cambio",                        "laps": 11, "lap_entrada": 144, "desgaste_entrada": { "FL": 78, "FR": 86, "RL": 82, "RR": 85 }, "notas": "REAL. Primer uso del set 6. Entra v144, NO cambia ruedas, SIGUE Fufo. DATO NOCTURNO (11 laps): FL 78 = ~2.0%/v, mas que de dia (~1.15) pero Fufo tuvo un par de perdidas que castigaron las ruedas de mas -> dato contaminado, no concluyente" },
-    { "stint": 15, "estado": "real", "piloto": "Fufo",    "piloto_entrante": "Sebas",   "horario": "~01:53-02:39", "set": 6,  "uso": "2/2",      "accion_final": "neumaticos nuevos",                 "laps": 11, "lap_entrada": null, "desgaste_entrada": { "FL": null, "FR": null, "RL": null, "RR": null }, "notas": "EN CURSO. Fufo 2o uso del set 6 (mismas ruedas, 78-86-82-85 al empezar). Cierra el DOBLE del set 6. Al final cede a Sebas (toma en ~40 min)" },
-    { "stint": 16, "estado": "plan", "piloto": "Sebas",   "piloto_entrante": "Sebas",   "horario": "02:39 (CEST)-02:25 (CET)", "set": 7, "uso": "1/2", "accion_final": "sin cambio",                   "laps": 11, "lap_entrada": null, "desgaste_entrada": { "FL": null, "FR": null, "RL": null, "RR": null }, "notas": "Sebas toma el volante aqui (set 7 nuevo). CAMBIO HORARIO 03:00->02:00 cae por este tramo. NOCHE - vigilar desgaste" },
-    { "stint": 17, "estado": "plan", "piloto": "Sebas",   "piloto_entrante": "Fufo",    "horario": "02:25-03:11", "set": 7,  "uso": "2/2",       "accion_final": "neumaticos nuevos",                 "laps": 11, "lap_entrada": null, "desgaste_entrada": { "FL": null, "FR": null, "RL": null, "RR": null }, "notas": "Cierre DOBLE set 7. Cambio a Fufo. Nuevos set 8" },
-    { "stint": 18, "estado": "plan", "piloto": "Fufo",    "piloto_entrante": "Fufo",    "horario": "03:23-04:09", "set": 8,  "uso": "1/2",       "accion_final": "sin cambio",                        "laps": 11, "lap_entrada": null, "desgaste_entrada": { "FL": null, "FR": null, "RL": null, "RR": null }, "notas": "" },
-    { "stint": 19, "estado": "plan", "piloto": "Fufo",    "piloto_entrante": "Sebas",   "horario": "04:09-04:56", "set": 8,  "uso": "2/2",       "accion_final": "neumaticos nuevos",                 "laps": 11, "lap_entrada": null, "desgaste_entrada": { "FL": null, "FR": null, "RL": null, "RR": null }, "notas": "Cambio a Sebas. Nuevos set 9" },
-    { "stint": 20, "estado": "plan", "piloto": "Sebas",   "piloto_entrante": "Sebas",   "horario": "04:56-05:42", "set": 9,  "uso": "1/2",       "accion_final": "sin cambio",                        "laps": 11, "lap_entrada": null, "desgaste_entrada": { "FL": null, "FR": null, "RL": null, "RR": null }, "notas": "" },
-    { "stint": 21, "estado": "plan", "piloto": "Sebas",   "piloto_entrante": "Mariano", "horario": "05:42-06:29", "set": 9,  "uso": "2/2",       "accion_final": "neumaticos nuevos",                 "laps": 11, "lap_entrada": null, "desgaste_entrada": { "FL": null, "FR": null, "RL": null, "RR": null }, "notas": "Cambio a Mariano. Nuevos set 10" },
-    { "stint": 22, "estado": "plan", "piloto": "Mariano", "piloto_entrante": "Mariano", "horario": "06:29-07:15", "set": 10, "uso": "1/2",       "accion_final": "sin cambio",                        "laps": 11, "lap_entrada": null, "desgaste_entrada": { "FL": null, "FR": null, "RL": null, "RR": null }, "notas": "Amanece - desgaste deberia volver a subir" },
-    { "stint": 23, "estado": "plan", "piloto": "Mariano", "piloto_entrante": "Gonzalo", "horario": "07:15-08:01", "set": 10, "uso": "2/2",       "accion_final": "neumaticos nuevos",                 "laps": 11, "lap_entrada": null, "desgaste_entrada": { "FL": null, "FR": null, "RL": null, "RR": null }, "notas": "Cambio a Gonzalo. Nuevos set 11" },
-    { "stint": 24, "estado": "plan", "piloto": "Gonzalo", "piloto_entrante": "Gonzalo", "horario": "08:01-08:48", "set": 11, "uso": "1/2",       "accion_final": "sin cambio",                        "laps": 11, "lap_entrada": null, "desgaste_entrada": { "FL": null, "FR": null, "RL": null, "RR": null }, "notas": "" },
-    { "stint": 25, "estado": "plan", "piloto": "Gonzalo", "piloto_entrante": "Mariano", "horario": "08:48-09:34", "set": 11, "uso": "2/2",       "accion_final": "neumaticos nuevos",                 "laps": 11, "lap_entrada": null, "desgaste_entrada": { "FL": null, "FR": null, "RL": null, "RR": null }, "notas": "Cambio a Mariano. Nuevos set 12" },
-    { "stint": 26, "estado": "plan", "piloto": "Mariano", "piloto_entrante": "Mariano", "horario": "09:34-10:21", "set": 12, "uso": "1/3",       "accion_final": "sin cambio",                        "laps": 11, "lap_entrada": null, "desgaste_entrada": { "FL": null, "FR": null, "RL": null, "RR": null }, "notas": "Set 12 = TRIPLE de dia (triple 3 de 3, plan original)" },
-    { "stint": 27, "estado": "plan", "piloto": "Mariano", "piloto_entrante": "Guille",  "horario": "10:21-11:07", "set": 12, "uso": "2/3",       "accion_final": "sin cambio",                        "laps": 11, "lap_entrada": null, "desgaste_entrada": { "FL": null, "FR": null, "RL": null, "RR": null }, "notas": "Cambio a Guille" },
-    { "stint": 28, "estado": "plan", "piloto": "Guille",  "piloto_entrante": "Guille",  "horario": "11:07-11:54", "set": 12, "uso": "3/3",       "accion_final": "neumaticos nuevos",                 "laps": 11, "lap_entrada": null, "desgaste_entrada": { "FL": null, "FR": null, "RL": null, "RR": null }, "notas": "Cierre triple set 12. Nuevos set 13" },
-    { "stint": 29, "estado": "plan", "piloto": "Guille",  "piloto_entrante": "Guille",  "horario": "11:54-12:40", "set": 13, "uso": "1/2",       "accion_final": "sin cambio",                        "laps": 11, "lap_entrada": null, "desgaste_entrada": { "FL": null, "FR": null, "RL": null, "RR": null }, "notas": "Set 13 = DOBLE (antes triple; pasado a doble por ir sobrados de sets)" },
-    { "stint": 30, "estado": "plan", "piloto": "Guille",  "piloto_entrante": "Gonzalo", "horario": "12:40-13:27", "set": 13, "uso": "2/2",       "accion_final": "neumaticos nuevos",                 "laps": 11, "lap_entrada": null, "desgaste_entrada": { "FL": null, "FR": null, "RL": null, "RR": null }, "notas": "Cambio a Gonzalo. Nuevos set 14 (ULTIMO)" },
-    { "stint": 31, "estado": "plan", "piloto": "Gonzalo", "piloto_entrante": "Gonzalo", "horario": "13:27-14:13", "set": 14, "uso": "1/2",       "accion_final": "sin cambio",                        "laps": 11, "lap_entrada": null, "desgaste_entrada": { "FL": null, "FR": null, "RL": null, "RR": null }, "notas": "" },
-    { "stint": 32, "estado": "plan", "piloto": "Gonzalo", "piloto_entrante": null,      "horario": "14:13-15:00", "set": 14, "uso": "2/2",       "accion_final": "bandera a cuadros",                 "laps": 11, "lap_entrada": null, "desgaste_entrada": { "FL": null, "FR": null, "RL": null, "RR": null }, "notas": "Final a bandera. Reserva: 2 neumaticos sueltos (medio set) SIN usar, para pinchazo" }
+    {
+      "stint": 1,
+      "estado": "real",
+      "piloto": "Gonzalo",
+      "piloto_entrante": "Gonzalo",
+      "inicio_utc": "2026-10-24T14:00:00Z",
+      "clock_juego": null,
+      "set": 1,
+      "uso": "1/2",
+      "accion_final": "solo energia",
+      "laps": 11,
+      "lap_entrada": 11,
+      "desgaste_entrada": {
+        "FL": 82,
+        "FR": 86,
+        "RL": 87,
+        "RR": 87
+      },
+      "notas": "Largada P22. Parada solo energia ~39 s. Ritmo 242.6 s. Sale v12 P20"
+    },
+    {
+      "stint": 2,
+      "estado": "real",
+      "piloto": "Gonzalo",
+      "piloto_entrante": "Fufo",
+      "inicio_utc": "2026-10-24T14:46:30Z",
+      "clock_juego": null,
+      "set": 1,
+      "uso": "2/2",
+      "accion_final": "neumaticos nuevos + energia",
+      "laps": 11,
+      "lap_entrada": 22,
+      "desgaste_entrada": {
+        "FL": 70,
+        "FR": 77,
+        "RL": 79,
+        "RR": 79
+      },
+      "notas": "Cambio a Fufo. Nuevos set 2. Ritmo 242.9 s. Parado ~51 s"
+    },
+    {
+      "stint": 3,
+      "estado": "real",
+      "piloto": "Fufo",
+      "piloto_entrante": "Fufo",
+      "inicio_utc": "2026-10-24T15:33:00Z",
+      "clock_juego": null,
+      "set": 2,
+      "uso": "1/2",
+      "accion_final": "solo energia",
+      "laps": 11,
+      "lap_entrada": 33,
+      "desgaste_entrada": {
+        "FL": 87,
+        "FR": 88,
+        "RL": 92,
+        "RR": 91
+      },
+      "notas": "Entra v33 sale v34. Pista mas fria - desgaste ~0.8%/vuelta. Desgaste medido en v36"
+    },
+    {
+      "stint": 4,
+      "estado": "real",
+      "piloto": "Fufo",
+      "piloto_entrante": "Sebas",
+      "inicio_utc": "2026-10-24T16:19:30Z",
+      "clock_juego": null,
+      "set": 2,
+      "uso": "2/2",
+      "accion_final": "neumaticos nuevos + energia",
+      "laps": 11,
+      "lap_entrada": 44,
+      "desgaste_entrada": {
+        "FL": 76,
+        "FR": 80,
+        "RL": 86,
+        "RR": 85
+      },
+      "notas": "Cambio a Sebas. Nuevos set 3. Parado ~51 s"
+    },
+    {
+      "stint": 5,
+      "estado": "real",
+      "piloto": "Sebas",
+      "piloto_entrante": "Guille",
+      "inicio_utc": "2026-10-24T17:06:00Z",
+      "clock_juego": null,
+      "set": 3,
+      "uso": "arranque",
+      "accion_final": "parada - cambio a Guille",
+      "laps": 1,
+      "lap_entrada": 45,
+      "desgaste_entrada": {
+        "FL": null,
+        "FR": null,
+        "RL": null,
+        "RR": null
+      },
+      "notas": "RECON tras CUELGUE PC. Mini-stint 1 lap del incidente + parada en pits. Estrena set 3. Cambio a Guille"
+    },
+    {
+      "stint": 6,
+      "estado": "real",
+      "piloto": "Guille",
+      "piloto_entrante": "Sebas",
+      "inicio_utc": "2026-10-24T17:52:30Z",
+      "clock_juego": null,
+      "set": 3,
+      "uso": "1/2",
+      "accion_final": "sin cambio",
+      "laps": 11,
+      "lap_entrada": 56,
+      "desgaste_entrada": {
+        "FL": 84,
+        "FR": 85,
+        "RL": 88,
+        "RR": 86
+      },
+      "notas": "Guille 11 v set 3. Avisado L&C. Cambio a Sebas"
+    },
+    {
+      "stint": 7,
+      "estado": "real",
+      "piloto": "Sebas",
+      "piloto_entrante": "Sebas",
+      "inicio_utc": "2026-10-24T18:39:00Z",
+      "clock_juego": null,
+      "set": 3,
+      "uso": "2/2",
+      "accion_final": "neumaticos nuevos",
+      "laps": 11,
+      "lap_entrada": 67,
+      "desgaste_entrada": {
+        "FL": 85,
+        "FR": 87,
+        "RL": 89,
+        "RR": 89
+      },
+      "notas": "Sebas 11 v set 3. Set 3 = DOBLE cerrado. Cambia a set 4 nuevo. Sebas sigue"
+    },
+    {
+      "stint": 8,
+      "estado": "real",
+      "piloto": "Sebas",
+      "piloto_entrante": "Mariano",
+      "inicio_utc": "2026-10-24T19:25:30Z",
+      "clock_juego": null,
+      "set": 4,
+      "uso": "1/3",
+      "accion_final": "sin cambio",
+      "laps": 11,
+      "lap_entrada": 78,
+      "desgaste_entrada": {
+        "FL": 72,
+        "FR": 75,
+        "RL": 81,
+        "RR": 80
+      },
+      "notas": "Sebas 11 v con set 4 nuevo. Cambio a Mariano. Set 4 pasa a TRIPLE"
+    },
+    {
+      "stint": 9,
+      "estado": "real",
+      "piloto": "Mariano",
+      "piloto_entrante": "Guille",
+      "inicio_utc": "2026-10-24T20:12:00Z",
+      "clock_juego": null,
+      "set": 4,
+      "uso": "2/3",
+      "accion_final": "sin cambio",
+      "laps": 11,
+      "lap_entrada": 89,
+      "desgaste_entrada": {
+        "FL": null,
+        "FR": null,
+        "RL": null,
+        "RR": null
+      },
+      "notas": "Mariano 11 v set 4. Cambio a Guille"
+    },
+    {
+      "stint": 10,
+      "estado": "real",
+      "piloto": "Guille",
+      "piloto_entrante": "Guille",
+      "inicio_utc": "2026-10-24T20:58:30Z",
+      "clock_juego": null,
+      "set": 4,
+      "uso": "3/3",
+      "accion_final": "neumaticos nuevos",
+      "laps": 11,
+      "lap_entrada": 100,
+      "desgaste_entrada": {
+        "FL": null,
+        "FR": null,
+        "RL": null,
+        "RR": null
+      },
+      "notas": "Guille 11 v set 4 (cierre triple). Estrena set 5. Sin dato de desgaste"
+    },
+    {
+      "stint": 11,
+      "estado": "real",
+      "piloto": "Guille",
+      "piloto_entrante": "Guille",
+      "inicio_utc": "2026-10-24T21:45:00Z",
+      "clock_juego": null,
+      "set": 5,
+      "uso": "1/3",
+      "accion_final": "sin cambio",
+      "laps": 11,
+      "lap_entrada": 111,
+      "desgaste_entrada": {
+        "FL": null,
+        "FR": null,
+        "RL": null,
+        "RR": null
+      },
+      "notas": "11 v set 5. Sin dato de desgaste"
+    },
+    {
+      "stint": 12,
+      "estado": "real",
+      "piloto": "Guille",
+      "piloto_entrante": "Guille",
+      "inicio_utc": "2026-10-24T22:31:30Z",
+      "clock_juego": null,
+      "set": 5,
+      "uso": "2/3",
+      "accion_final": "sin cambio (solo energia)",
+      "laps": 11,
+      "lap_entrada": 122,
+      "desgaste_entrada": {
+        "FL": null,
+        "FR": null,
+        "RL": null,
+        "RR": null
+      },
+      "notas": "EN CURSO. Entra v122. 11 v set 5. Desde aqui: trackear solo desgaste (energia validada ~8.9%/v)"
+    },
+    {
+      "stint": 13,
+      "estado": "real",
+      "piloto": "Guille",
+      "piloto_entrante": "Fufo",
+      "inicio_utc": "2026-10-24T23:18:00Z",
+      "clock_juego": null,
+      "set": 5,
+      "uso": "3/3",
+      "accion_final": "neumaticos nuevos",
+      "laps": 11,
+      "lap_entrada": 133,
+      "desgaste_entrada": {
+        "FL": null,
+        "FR": null,
+        "RL": null,
+        "RR": null
+      },
+      "notas": "REAL. Cierre triple set 5 cumplido segun plan. Fufo sale v134 con set 6 nuevo. Pos 24. DESGASTE DE CIERRE NO REPORTADO (primer dato nocturno perdido)"
+    },
+    {
+      "stint": 14,
+      "estado": "real",
+      "piloto": "Fufo",
+      "piloto_entrante": "Fufo",
+      "inicio_utc": "2026-10-25T00:04:30Z",
+      "clock_juego": null,
+      "set": 6,
+      "uso": "1/2",
+      "accion_final": "sin cambio",
+      "laps": 11,
+      "lap_entrada": 144,
+      "desgaste_entrada": {
+        "FL": 78,
+        "FR": 86,
+        "RL": 82,
+        "RR": 85
+      },
+      "notas": "REAL. Primer uso del set 6. Entra v144, NO cambia ruedas, SIGUE Fufo. DATO NOCTURNO (11 laps): FL 78 = ~2.0%/v, mas que de dia (~1.15) pero Fufo tuvo un par de perdidas que castigaron las ruedas de mas -> dato contaminado, no concluyente"
+    },
+    {
+      "stint": 15,
+      "estado": "real",
+      "piloto": "Fufo",
+      "piloto_entrante": "Sebas",
+      "inicio_utc": "2026-10-25T00:51:00Z",
+      "clock_juego": null,
+      "set": 6,
+      "uso": "2/2",
+      "accion_final": "neumaticos nuevos + REPARACION",
+      "laps": 11,
+      "lap_entrada": 155,
+      "desgaste_entrada": {
+        "FL": 63,
+        "FR": 73,
+        "RL": 72,
+        "RR": 74
+      },
+      "notas": "REAL. Fufo cierra DOBLE set 6. Entra v155, desgaste 63-73-72-74 (contaminado: perdidas + golpe entrando a box). SE REPARA (golpe en la entrada a box). Monta set 7 nuevo, cede a Sebas. Track limits 6.5/12. Inventario: 30 neumaticos nuevos de reserva tras montar set 7"
+    },
+    {
+      "stint": 16,
+      "estado": "real",
+      "piloto": "Sebas",
+      "piloto_entrante": "Sebas",
+      "inicio_utc": "2026-10-25T01:37:30Z",
+      "clock_juego": null,
+      "set": 7,
+      "uso": "1/2",
+      "accion_final": "sin cambio (solo energia)",
+      "laps": 11,
+      "lap_entrada": null,
+      "desgaste_entrada": {
+        "FL": null,
+        "FR": null,
+        "RL": null,
+        "RR": null
+      },
+      "notas": "REAL. Sebas 1er stint con set 7 nuevo (salio v156). Parada solo energia, sigue. CAMBIO HORARIO 03:00->02:00 cae por este tramo"
+    },
+    {
+      "stint": 17,
+      "estado": "real",
+      "piloto": "Sebas",
+      "piloto_entrante": "Fufo",
+      "inicio_utc": "2026-10-25T02:24:00Z",
+      "clock_juego": null,
+      "set": 7,
+      "uso": "2/2",
+      "accion_final": "neumaticos nuevos",
+      "laps": 11,
+      "lap_entrada": 177,
+      "desgaste_entrada": {
+        "FL": null,
+        "FR": null,
+        "RL": null,
+        "RR": null
+      },
+      "notas": "REAL. Sebas cierra DOBLE set 7 (sus 2 stints). Entra v177, desgaste SIN DATO. Monta set 8 nuevo, cede a Fufo (que sale v178)"
+    },
+    {
+      "stint": 18,
+      "estado": "real",
+      "piloto": "Fufo",
+      "piloto_entrante": "Fufo",
+      "inicio_utc": "2026-10-25T03:10:30Z",
+      "clock_juego": "04:15",
+      "set": 8,
+      "uso": "1/2",
+      "accion_final": "sin cambio",
+      "laps": 11,
+      "lap_entrada": null,
+      "desgaste_entrada": {
+        "FL": null,
+        "FR": null,
+        "RL": null,
+        "RR": null
+      },
+      "notas": "EN CURSO. Fufo arranco v178 con set 8 nuevo. Al cerrar (stint 19) monta set 9 y cede a Sebas"
+    },
+    {
+      "stint": 19,
+      "estado": "plan",
+      "piloto": "Fufo",
+      "piloto_entrante": "Sebas",
+      "inicio_utc": "2026-10-25T03:57:00Z",
+      "clock_juego": null,
+      "set": 8,
+      "uso": "2/2",
+      "accion_final": "neumaticos nuevos",
+      "laps": 11,
+      "lap_entrada": null,
+      "desgaste_entrada": {
+        "FL": null,
+        "FR": null,
+        "RL": null,
+        "RR": null
+      },
+      "notas": "Cambio a Sebas. Nuevos set 9"
+    },
+    {
+      "stint": 20,
+      "estado": "plan",
+      "piloto": "Sebas",
+      "piloto_entrante": "Sebas",
+      "inicio_utc": "2026-10-25T04:43:30Z",
+      "clock_juego": null,
+      "set": 9,
+      "uso": "1/2",
+      "accion_final": "sin cambio",
+      "laps": 11,
+      "lap_entrada": null,
+      "desgaste_entrada": {
+        "FL": null,
+        "FR": null,
+        "RL": null,
+        "RR": null
+      },
+      "notas": ""
+    },
+    {
+      "stint": 21,
+      "estado": "plan",
+      "piloto": "Sebas",
+      "piloto_entrante": "Mariano",
+      "inicio_utc": "2026-10-25T05:30:00Z",
+      "clock_juego": null,
+      "set": 9,
+      "uso": "2/2",
+      "accion_final": "neumaticos nuevos",
+      "laps": 11,
+      "lap_entrada": null,
+      "desgaste_entrada": {
+        "FL": null,
+        "FR": null,
+        "RL": null,
+        "RR": null
+      },
+      "notas": "Cambio a Mariano. Nuevos set 10"
+    },
+    {
+      "stint": 22,
+      "estado": "plan",
+      "piloto": "Mariano",
+      "piloto_entrante": "Mariano",
+      "inicio_utc": "2026-10-25T06:16:30Z",
+      "clock_juego": null,
+      "set": 10,
+      "uso": "1/2",
+      "accion_final": "sin cambio",
+      "laps": 11,
+      "lap_entrada": null,
+      "desgaste_entrada": {
+        "FL": null,
+        "FR": null,
+        "RL": null,
+        "RR": null
+      },
+      "notas": "Amanece - desgaste deberia volver a subir"
+    },
+    {
+      "stint": 23,
+      "estado": "plan",
+      "piloto": "Mariano",
+      "piloto_entrante": "Gonzalo",
+      "inicio_utc": "2026-10-25T07:03:00Z",
+      "clock_juego": null,
+      "set": 10,
+      "uso": "2/2",
+      "accion_final": "neumaticos nuevos",
+      "laps": 11,
+      "lap_entrada": null,
+      "desgaste_entrada": {
+        "FL": null,
+        "FR": null,
+        "RL": null,
+        "RR": null
+      },
+      "notas": "Cambio a Gonzalo. Nuevos set 11"
+    },
+    {
+      "stint": 24,
+      "estado": "plan",
+      "piloto": "Gonzalo",
+      "piloto_entrante": "Gonzalo",
+      "inicio_utc": "2026-10-25T07:49:30Z",
+      "clock_juego": null,
+      "set": 11,
+      "uso": "1/2",
+      "accion_final": "sin cambio",
+      "laps": 11,
+      "lap_entrada": null,
+      "desgaste_entrada": {
+        "FL": null,
+        "FR": null,
+        "RL": null,
+        "RR": null
+      },
+      "notas": ""
+    },
+    {
+      "stint": 25,
+      "estado": "plan",
+      "piloto": "Gonzalo",
+      "piloto_entrante": "Mariano",
+      "inicio_utc": "2026-10-25T08:36:00Z",
+      "clock_juego": null,
+      "set": 11,
+      "uso": "2/2",
+      "accion_final": "neumaticos nuevos",
+      "laps": 11,
+      "lap_entrada": null,
+      "desgaste_entrada": {
+        "FL": null,
+        "FR": null,
+        "RL": null,
+        "RR": null
+      },
+      "notas": "Cambio a Mariano. Nuevos set 12"
+    },
+    {
+      "stint": 26,
+      "estado": "plan",
+      "piloto": "Mariano",
+      "piloto_entrante": "Mariano",
+      "inicio_utc": "2026-10-25T09:22:30Z",
+      "clock_juego": null,
+      "set": 12,
+      "uso": "1/3",
+      "accion_final": "sin cambio",
+      "laps": 11,
+      "lap_entrada": null,
+      "desgaste_entrada": {
+        "FL": null,
+        "FR": null,
+        "RL": null,
+        "RR": null
+      },
+      "notas": "Set 12 = TRIPLE de dia (triple 3 de 3, plan original)"
+    },
+    {
+      "stint": 27,
+      "estado": "plan",
+      "piloto": "Mariano",
+      "piloto_entrante": "Guille",
+      "inicio_utc": "2026-10-25T10:09:00Z",
+      "clock_juego": null,
+      "set": 12,
+      "uso": "2/3",
+      "accion_final": "sin cambio",
+      "laps": 11,
+      "lap_entrada": null,
+      "desgaste_entrada": {
+        "FL": null,
+        "FR": null,
+        "RL": null,
+        "RR": null
+      },
+      "notas": "Cambio a Guille"
+    },
+    {
+      "stint": 28,
+      "estado": "plan",
+      "piloto": "Guille",
+      "piloto_entrante": "Guille",
+      "inicio_utc": "2026-10-25T10:55:30Z",
+      "clock_juego": null,
+      "set": 12,
+      "uso": "3/3",
+      "accion_final": "neumaticos nuevos",
+      "laps": 11,
+      "lap_entrada": null,
+      "desgaste_entrada": {
+        "FL": null,
+        "FR": null,
+        "RL": null,
+        "RR": null
+      },
+      "notas": "Cierre triple set 12. Nuevos set 13"
+    },
+    {
+      "stint": 29,
+      "estado": "plan",
+      "piloto": "Guille",
+      "piloto_entrante": "Guille",
+      "inicio_utc": "2026-10-25T11:42:00Z",
+      "clock_juego": null,
+      "set": 13,
+      "uso": "1/2",
+      "accion_final": "sin cambio",
+      "laps": 11,
+      "lap_entrada": null,
+      "desgaste_entrada": {
+        "FL": null,
+        "FR": null,
+        "RL": null,
+        "RR": null
+      },
+      "notas": "Set 13 = DOBLE (antes triple; pasado a doble por ir sobrados de sets)"
+    },
+    {
+      "stint": 30,
+      "estado": "plan",
+      "piloto": "Guille",
+      "piloto_entrante": "Gonzalo",
+      "inicio_utc": "2026-10-25T12:28:30Z",
+      "clock_juego": null,
+      "set": 13,
+      "uso": "2/2",
+      "accion_final": "neumaticos nuevos",
+      "laps": 11,
+      "lap_entrada": null,
+      "desgaste_entrada": {
+        "FL": null,
+        "FR": null,
+        "RL": null,
+        "RR": null
+      },
+      "notas": "Cambio a Gonzalo. Nuevos set 14 (ULTIMO)"
+    },
+    {
+      "stint": 31,
+      "estado": "plan",
+      "piloto": "Gonzalo",
+      "piloto_entrante": "Gonzalo",
+      "inicio_utc": "2026-10-25T13:15:00Z",
+      "clock_juego": null,
+      "set": 14,
+      "uso": "1/2",
+      "accion_final": "sin cambio",
+      "laps": 11,
+      "lap_entrada": null,
+      "desgaste_entrada": {
+        "FL": null,
+        "FR": null,
+        "RL": null,
+        "RR": null
+      },
+      "notas": ""
+    },
+    {
+      "stint": 32,
+      "estado": "plan",
+      "piloto": "Gonzalo",
+      "piloto_entrante": null,
+      "inicio_utc": "2026-10-25T14:01:30Z",
+      "clock_juego": null,
+      "set": 14,
+      "uso": "2/2",
+      "accion_final": "bandera a cuadros",
+      "laps": 11,
+      "lap_entrada": null,
+      "desgaste_entrada": {
+        "FL": null,
+        "FR": null,
+        "RL": null,
+        "RR": null
+      },
+      "notas": "Final a bandera. Reserva: 2 neumaticos sueltos (medio set) SIN usar, para pinchazo"
+    }
   ]
 }
