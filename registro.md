@@ -95,3 +95,21 @@ Se pasó de CSV a JSON como formato fuente:
 - `carrera.json` ← **fuente única viva** (reemplaza `plan-vivo.csv`): plan + real + lo que queda.
 - `registro.md` (este archivo) ← solo diario de decisiones/mediciones/narración.
 - La exportación a Google Sheets (CSV `;`, 10 columnas de siempre) se genera a demanda desde `carrera.json`.
+
+## Sincronización matutina (stints 22-26, ~10:37 dom 25-oct)
+- **Stints 22-23 (Mariano, set 10 doble):** v232 (85-86-90-89) y v243 (72-73-78-77). Degradación FL ~1.27 %/v. Cierre impecable con 72 % restante en FL. Monta set 11 nuevo, cede a Gonzalo.
+- **Stints 24-25 (Gonzalo, set 11 doble):** v254 (84-87-87-87) y v265 (70-75-77-77). Degradación FL ~1.36 %/v. Cierre con 70 % restante en FL. Monta set 12 nuevo, cede a Mariano.
+- **Stint 26 (Mariano, set 12 uso 1/3 de triple):** v276 a las 10:17 (86-88-88-89). Solo energía.
+- **Stint 27 (Mariano):** Entró clavado a las 11:02 en **v287** con desgaste **75-78-79-80** (~1.0 %/v en FL). Desgaste espectacular tras 22 laps, llega con 75 % de vida al 3er uso. Solo energía.
+- **Stint 28 (Guille):** Entró clavado a las 11:47 en **v298** con desgaste **58-64-70-70**. El FL bajó al 58 % provocando fuerte subviraje en pista (tal como se calculó), pero el neumático aguantó físicamente sin incidentes cerrando con éxito el último triple planeado de la carrera. **Track limits impecables:** se mantuvieron en **8.5 / 12** (0 avisos sumados en 11 vueltas críticas).
+- **Box v298:** Monta **Set 13 nuevo** (4 neumáticos) + energía. Sigue Guille.
+- **Stint 29 (Guille):** Entró clavado a las 12:32 en **v309** con desgaste **84-87-89-89** (~1.45 %/v en FL). Degradación estándar y uniforme para un primer stint diurno.
+- **Box v309:** **Solo energía**, sin cambio de ruedas (Set 13 va a doble). Sigue Guille.
+- **Stint 30 (Guille en pista):** Arranca v310 con Set 13 (uso 2/2). Es el último stint de Guille tras una tanda impecable de 3 stints (28, 29, 30). Próxima entrada en v320 (~13:17) para montar el **Set 14 (último set nuevo)** y ceder a Gonzalo.
+
+- **Inventario:** Quedan 6 neumáticos nuevos (Set 14 de 4 ruedas para la parada en v320 + 2 de reserva de emergencia).
+
+- **Estrategia neumáticos:** Set 12 confirmado a TRIPLE de día (26 Mariano, 27 Mariano, 28 Guille). Restan 10 neumáticos nuevos (sets 13 y 14 de 4 ruedas + 2 de reserva de emergencia). Cuadra al milímetro con el plan original.
+- **⚠️ Track Limits:** Subió a **8.5 / 12** en v281. Restan ~63 vueltas y solo 3.5 avisos de margen antes del Drive-Through. Alerta roja a los pilotos para que aseguren el trazado sin pisar líneas.
+- **Regla última parada (Stint 31 en v331):** Carga de energía calculada a medida = `(vueltas restantes estimadas + 2 de margen) × 8.9%`. No llenar al 100% para rascar segundos parados en box. Set 14 sigue puesto y Gonzalo remata a meta.
+

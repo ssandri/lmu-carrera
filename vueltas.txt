@@ -1,0 +1,970 @@
+Vuelta
+Tiempo
+Δ mejor
+Pos.
+Notas
+--
+309
+4:02.617
+P25
+BOX
+Guille Lagunas
+308
+3:56.813
++0,016
+--
+Guille Lagunas
+307
+3:56.797
++0,000
+--
+Guille Lagunas
+306
+3:57.109
++0,313
+--
+Guille Lagunas
+305
+4:00.688
++3,891
+--
+Guille Lagunas
+304
+--
+--
+Guille Lagunas
+303
+3:57.844
++1,047
+--
+Guille Lagunas
+302
+3:58.195
++1,398
+--
+Guille Lagunas
+301
+3:58.000
++1,203
+--
+Guille Lagunas
+300
+--
+--
+Guille Lagunas
+299
+5:18.719
+--
+BOX
+Guille Lagunas
+298
+4:03.453
+--
+BOX
+Guille Lagunas
+297
+4:00.094
++3,297
+--
+Guille Lagunas
+296
+4:01.125
++4,328
+--
+Guille Lagunas
+295
+3:58.297
++1,500
+--
+Guille Lagunas
+294
+3:59.453
++2,656
+--
+Guille Lagunas
+293
+3:59.992
++3,195
+--
+Guille Lagunas
+292
+3:59.000
++2,203
+--
+Guille Lagunas
+291
+3:57.938
++1,141
+--
+Guille Lagunas
+290
+3:58.922
++2,125
+--
+Guille Lagunas
+289
+3:58.469
++1,672
+--
+Guille Lagunas
+288
+5:02.326
+--
+BOX
+Guille Lagunas
+287
+4:08.125
+--
+BOX
+Mariano Matute
+286
+4:03.531
++6,734
+--
+Mariano Matute
+285
+4:03.180
++6,383
+--
+Mariano Matute
+284
+4:04.547
++7,750
+--
+Mariano Matute
+283
+4:03.945
++7,148
+--
+Mariano Matute
+282
+4:05.383
++8,586
+--
+Mariano Matute
+281
+4:04.883
++8,086
+--
+Mariano Matute
+280
+4:10.953
++14,156
+--
+Mariano Matute
+279
+4:05.484
++8,688
+--
+Mariano Matute
+278
+4:06.258
++9,461
+--
+Mariano Matute
+277
+5:08.813
+--
+BOX
+Mariano Matute
+276
+4:10.273
+--
+BOX
+Mariano Matute
+275
+4:20.094
++23,297
+--
+Mariano Matute
+274
+4:05.602
++8,805
+--
+Mariano Matute
+273
+4:04.727
++7,930
+--
+Mariano Matute
+272
+4:02.727
++5,930
+--
+Mariano Matute
+271
+4:05.969
++9,172
+--
+Mariano Matute
+270
+4:04.039
++7,242
+--
+Mariano Matute
+269
+4:02.758
++5,961
+--
+Mariano Matute
+268
+4:04.297
++7,500
+--
+Mariano Matute
+267
+4:07.625
++10,828
+--
+Mariano Matute
+266
+5:29.659
+--
+BOX
+Mariano Matute
+265
+4:05.266
+--
+BOX
+Gonzalo Rodrigo
+264
+3:58.680
++1,883
+--
+Gonzalo Rodrigo
+263
+3:59.391
++2,594
+--
+Gonzalo Rodrigo
+262
+4:01.398
++4,602
+--
+Gonzalo Rodrigo
+261
+4:01.531
++4,734
+--
+Gonzalo Rodrigo
+260
+3:59.914
++3,117
+--
+Gonzalo Rodrigo
+259
+4:00.582
++3,785
+--
+Gonzalo Rodrigo
+258
+3:59.609
++2,813
+--
+Gonzalo Rodrigo
+257
+4:03.105
++6,309
+--
+Gonzalo Rodrigo
+256
+4:02.270
++5,473
+--
+Gonzalo Rodrigo
+255
+5:02.863
+--
+BOX
+Gonzalo Rodrigo
+254
+4:07.430
+--
+BOX
+Gonzalo Rodrigo
+253
+4:00.852
++4,055
+--
+Gonzalo Rodrigo
+252
+4:01.207
++4,410
+--
+Gonzalo Rodrigo
+251
+4:00.738
++3,941
+--
+Gonzalo Rodrigo
+250
+4:00.695
++3,898
+--
+Gonzalo Rodrigo
+249
+4:01.691
++4,895
+--
+Gonzalo Rodrigo
+248
+4:00.520
++3,723
+--
+Gonzalo Rodrigo
+247
+4:01.199
++4,402
+--
+Gonzalo Rodrigo
+246
+4:01.832
++5,035
+--
+Gonzalo Rodrigo
+245
+4:09.340
++12,543
+--
+Gonzalo Rodrigo
+244
+5:28.942
+--
+BOX
+Gonzalo Rodrigo
+243
+4:08.898
+--
+BOX
+Mariano Matute
+242
+4:06.133
++9,336
+--
+Mariano Matute
+241
+4:05.727
++8,930
+--
+Mariano Matute
+240
+4:04.320
++7,523
+--
+Mariano Matute
+239
+4:03.840
++7,043
+--
+Mariano Matute
+238
+4:03.086
++6,289
+--
+Mariano Matute
+237
+4:08.031
++11,234
+--
+Mariano Matute
+236
+4:03.508
++6,711
+--
+Mariano Matute
+235
+4:02.977
++6,180
+--
+Mariano Matute
+234
+4:03.766
++6,969
+--
+Mariano Matute
+233
+5:20.387
+--
+BOX
+Mariano Matute
+232
+4:09.309
+--
+BOX
+Mariano Matute
+231
+4:04.859
++8,063
+--
+Mariano Matute
+230
+4:04.211
++7,414
+--
+Mariano Matute
+229
+4:05.141
++8,344
+--
+Mariano Matute
+228
+4:03.668
++6,871
+--
+Mariano Matute
+227
+4:04.801
++8,004
+--
+Mariano Matute
+226
+4:04.898
++8,102
+--
+Mariano Matute
+225
+4:10.313
++13,516
+--
+Mariano Matute
+224
+4:05.598
++8,801
+--
+Mariano Matute
+223
+4:06.922
++10,125
+--
+Mariano Matute
+222
+5:41.718
+--
+BOX
+Mariano Matute
+221
+4:09.906
+--
+BOX
+Sebastian Mario Sandri
+220
+4:04.719
++7,922
+--
+Sebastian Mario Sandri
+219
+4:02.117
++5,320
+--
+Sebastian Mario Sandri
+218
+4:05.000
++8,203
+--
+Sebastian Mario Sandri
+217
+4:03.496
++6,699
+--
+Sebastian Mario Sandri
+216
+--
+--
+Sebastian Mario Sandri
+215
+--
+--
+Sebastian Mario Sandri
+214
+4:03.102
++6,305
+--
+Sebastian Mario Sandri
+213
+4:02.152
++5,355
+--
+Sebastian Mario Sandri
+212
+4:04.086
++7,289
+--
+Sebastian Mario Sandri
+211
+5:05.449
+--
+BOX
+Sebastian Mario Sandri
+210
+4:09.523
+--
+BOX
+Sebastian Mario Sandri
+209
+4:01.227
++4,430
+--
+Sebastian Mario Sandri
+208
+4:03.098
++6,301
+--
+Sebastian Mario Sandri
+207
+4:01.465
++4,668
+--
+Sebastian Mario Sandri
+206
+4:01.746
++4,949
+--
+Sebastian Mario Sandri
+205
+4:01.277
++4,480
+--
+Sebastian Mario Sandri
+204
+4:03.055
++6,258
+--
+Sebastian Mario Sandri
+203
+4:02.023
++5,227
+--
+Sebastian Mario Sandri
+202
+4:02.840
++6,043
+--
+Sebastian Mario Sandri
+201
+4:05.113
++8,316
+--
+Sebastian Mario Sandri
+200
+5:36.184
+--
+BOX
+Sebastian Mario Sandri
+199
+4:09.391
+--
+BOX
+Alfonso Fraga
+198
+4:05.496
++8,699
+--
+Alfonso Fraga
+197
+4:02.477
++5,680
+--
+Alfonso Fraga
+196
+4:06.695
++9,898
+--
+Alfonso Fraga
+195
+4:12.313
++15,516
+--
+Alfonso Fraga
+194
+4:08.215
++11,418
+--
+Alfonso Fraga
+193
+4:06.395
++9,598
+--
+Alfonso Fraga
+192
+4:05.980
++9,184
+--
+Alfonso Fraga
+191
+4:11.465
++14,668
+--
+Alfonso Fraga
+190
+4:05.688
++8,891
+--
+Alfonso Fraga
+189
+--
+--
+BOX
+Alfonso Fraga
+188
+4:09.523
+--
+BOX
+Alfonso Fraga
+187
+4:02.879
++6,082
+--
+Alfonso Fraga
+186
+4:04.914
++8,117
+--
+Alfonso Fraga
+185
+4:05.340
++8,543
+--
+Alfonso Fraga
+184
+4:16.266
++19,469
+--
+Alfonso Fraga
+183
+4:05.719
++8,922
+--
+Alfonso Fraga
+182
+4:06.559
++9,762
+--
+Alfonso Fraga
+181
+4:04.746
++7,949
+--
+Alfonso Fraga
+180
+4:06.195
++9,398
+--
+Alfonso Fraga
+179
+4:09.488
++12,691
+--
+Alfonso Fraga
+178
+5:37.078
+--
+BOX
+Alfonso Fraga
+177
+4:07.145
+--
+BOX
+Sebastian Mario Sandri
+176
+4:04.594
++7,797
+--
+Sebastian Mario Sandri
+175
+--
+--
+Sebastian Mario Sandri
+174
+4:04.043
++7,246
+--
+Sebastian Mario Sandri
+173
+4:03.480
++6,684
+--
+Sebastian Mario Sandri
+172
+--
+--
+Sebastian Mario Sandri
+171
+--
+--
+Sebastian Mario Sandri
+170
+--
+--
+Sebastian Mario Sandri
+169
+4:03.625
++6,828
+--
+Sebastian Mario Sandri
+168
+4:04.453
++7,656
+--
+Sebastian Mario Sandri
+167
+5:15.406
+--
+BOX
+Sebastian Mario Sandri
+166
+5:20.453
+--
+BOX
+Sebastian Mario Sandri
+165
+4:04.555
++7,758
+--
+Sebastian Mario Sandri
+164
+4:02.363
++5,566
+--
+Sebastian Mario Sandri
+163
+4:03.254
++6,457
+--
+Sebastian Mario Sandri
+162
+4:06.043
++9,246
+--
+Sebastian Mario Sandri
+161
+4:01.367
++4,570
+--
+Sebastian Mario Sandri
+160
+4:03.098
++6,301
+--
+Sebastian Mario Sandri
+159
+4:06.637
++9,840
+--
+Sebastian Mario Sandri
+158
+4:04.789
++7,992
+--
+Sebastian Mario Sandri
+157
+4:09.266
++12,469
+--
+Sebastian Mario Sandri
+156
+6:08.212
+--
+BOX
+Sebastian Mario Sandri
+155
+4:38.719
+--
+BOX
+Alfonso Fraga
+154
+4:04.281
++7,484
+--
+Alfonso Fraga
+153
+4:04.242
++7,445
+--
+Alfonso Fraga
+152
+--
+--
+Alfonso Fraga
+151
+--
+--
+Alfonso Fraga
+150
+--
+--
+Alfonso Fraga
+149
+4:01.977
++5,180
+--
+Alfonso Fraga
+148
+4:05.270
++8,473
+--
+Alfonso Fraga
+147
+4:02.965
++6,168
+--
+Alfonso Fraga
+146
+4:03.887
++7,090
+--
+Alfonso Fraga
+145
+5:09.188
+--
+BOX
+Alfonso Fraga
+144
+4:08.512
+--
+BOX
+Alfonso Fraga
+143
+4:03.031
++6,234
+--
+Alfonso Fraga
+142
+4:13.020
++16,223
+--
+Alfonso Fraga
+141
+4:05.043
++8,246
+--
+Alfonso Fraga
+140
+4:03.527
++6,730
+--
+Alfonso Fraga
+139
+--
+--
+Alfonso Fraga
+138
+4:05.055
++8,258
+--
+Alfonso Fraga
+137
+4:05.805
++9,008
+--
+Alfonso Fraga
+136
+4:05.848
++9,051
+--
+Alfonso Fraga
+135
+4:07.707
++10,910
+--
+Alfonso Fraga
+134
+5:37.981
+--
+BOX
+Alfonso Fraga
+133
+4:04.441
+--
+BOX
+Guille Lagunas
+132
+4:01.910
++5,113
+--
+Guille Lagunas
+131
+3:57.676
++0,879
+--
+Guille Lagunas
+130
+3:58.762
++1,965
+--
+Guille Lagunas
+129
+3:58.244
++1,447
+--
+Guille Lagunas
+128
+3:58.473
++1,676
+--
+Guille Lagunas
+127
+3:59.572
++2,775
+--
+Guille Lagunas
+126
+4:02.840
++6,043
+--
+Guille Lagunas
+125
+--
+--
+Guille Lagunas
+124
+4:01.080
++4,283
+--
+Guille Lagunas
+123
+5:01.840
+--
+BOX
+Guille Lagunas
+122
+4:03.201
+--
+BOX
+Guille Lagunas
+121
+--
+--
+Guille Lagunas
+120
+3:57.727
++0,930
+--
+Guille Lagunas
+119
+3:59.072
++2,275
+--
+Guille Lagunas
+118
+3:58.375
++1,578
+--
+Guille Lagunas
+117
+3:59.143
++2,346
+--
+Guille Lagunas
+116
+3:58.594
++1,797
+--
+Guille Lagunas
+115
+--
+--
+Guille Lagunas
+114
+--
+--
+Guille Lagunas

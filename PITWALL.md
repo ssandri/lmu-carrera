@@ -64,6 +64,7 @@ Idioma: **español**. Unidades: **métricas**.
   izquierdo (FL)**, que es el que peor acaba en los triples (set 4 proyectó ~59 % FL al cierre).
 
 ### Reglas de decisión
+- **Última parada (fin Stint 31):** no cargar al 100% a ciegas. Calcular energía necesaria = `(vueltas estimadas restantes + 2 laps de margen) × 8.9 %`. Cargar solo el % objetivo necesario para ahorrar segundos clave en box parado.
 - **Reparar:** solo si el daño cuesta más de ~1.5 s/vuelta durante el stint siguiente (reparar = 30 s).
   Daño estético: no.
 - **Neumáticos:** cambio de 4 al cerrar set; 2 solo si el desgaste va muy desigual.

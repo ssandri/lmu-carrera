@@ -1,4 +1,4 @@
-# lmu-carrera
+﻿# lmu-carrera
 
 Pit wall en vivo para la **24h de Le Mans** (Lexus RC F LMGT3 #397), llevado por una IA que hace de
 ingeniero de carrera.

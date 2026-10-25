@@ -30,17 +30,17 @@
       "experimento_abierto": "medir desgaste de noche (stints ~13-21) vs dia. Primer dato nocturno: cierre triple set 5 (stint 13, v133)."
     },
     "estado_actual": {
-      "momento": "dom 25-oct ~06:25 Madrid CET. TRASPASO: Sebas cerro su doble (v221) y cedio a Mariano. Sebas se va a dormir.",
-      "stint_en_curso": 22,
+      "momento": "dom 25-oct ~12:32 Madrid CET. En vivo en Stint 30 (v310).",
+      "stint_en_curso": 30,
       "posicion": 24,
-      "detalle": "Mariano al volante con set 10 nuevo (arranco ~v222). Sebas cerro el doble del set 9 en v221 (68-71-75-75). Quedan stints 22-32.",
-      "proximo_evento": "stint 23 (~v243): Mariano cierra el doble del set 10 -> neumaticos nuevos (set 11) + cede a Gonzalo. Amanece en este tramo.",
-      "clima": "Noche, pista seca a maximo agarre. Condiciones favorables de desgaste.",
-      "track_limits_actual": "7.75/12 (al llegar a 12 = Drive-Through). SUBIENDO rapido (6.5 -> 7.75). ALERTA: a este ritmo llegamos a 12 antes de bandera. Avisar FUERTE a pilotos de no pisar pianos/salirse.",
-      "dano": "Sin dano pendiente (Fufo reparo el golpe en el stint 15).",
-      "proyeccion_laps": "A las 04:53 Madrid (v199, ~13.9h corridas): MFD proyectaba 344 laps a las 04:32. Con paces reales por piloto (Mariano 4:04, Guille 3:59, Gonzalo 4:00, Fufo 4:06, Sebas 4:04 - APROX) el stint 32 cierra ~13:57 Madrid con ~342 laps y bandera a las 15:00 -> SE COMPLETAN LOS 32 STINTS con ~1h de margen (caben ~10 laps mas en ese hueco). Revisar en cada parada.",
-      "horarios_reanclados": "Horarios de stints 20-32 recalculados a las 04:53:30 Madrid con paces reales por piloto (aprox) + paradas (~50s energia, +12s si cambia 4 ruedas). Son ESTIMACION, re-anclar con la hora real de cada entrada.",
-      "inventario_neumaticos": "Tras montar el set 9 (v200) quedan ~22 nuevos de reserva. El plan consume 20 mas (5 cambios de 4: sets 10-14) hasta bandera -> sobran ~2. CUADRA.",
+      "detalle": "Guille en pista con set 13 uso 2/2 (cierre de doble). Arranco en v310 tras parada v309 (desgaste 84-87-89-89). Solo energia.",
+      "proximo_evento": "Parada v320 (~13:17): Cierre doble set 13 -> 4 NEUMATICOS NUEVOS (Set 14, ULTIMO SET) + relevo a Gonzalo.",
+      "clima": "Dia, pista seca en optimas condiciones.",
+      "track_limits_actual": "8.5/12 (margen de 3.5 avisos antes de Drive-Through).",
+      "dano": "Sin dano pendiente.",
+      "proyeccion_laps": "En v310 de ~345 estimadas. Quedan 35 vueltas. Bandera ~15:00 CET.",
+      "horarios_reanclados": "Paradas estimadas: v320 (~13:17), v331 (~14:02), v342 (~14:47), bandera ~15:00.",
+      "inventario_neumaticos": "Tras montar Set 13 quedan 6 nuevos: Set 14 (4 ruedas) para v320 + 2 de reserva para pinchazo. CUADRA AL MILIMETRO.",
       "experimento_nocturno": "CONCLUSION PRELIMINAR (set 7 de Sebas, doble limpio): stint 16 FL 85 tras ~11 laps y stint 17 FL 69 al cierre del doble (22 laps) -> ambos dan ~1.4 %/vuelta en el FL. De noche NO desgasta menos (incluso algo mas que el ~1.15 de dia). Dos datos consistentes. Set 6 (Fufo) descartado por contaminado. IMPLICACION: a ~1.4%/v un triple nocturno cerraria el FL ~53% (bajo umbral 64) -> mantener dobles de noche, los triples solo de dia como estaba.",
       "secuencia_laps_entrada": [
         11,
@@ -61,7 +61,17 @@
         166,
         177,
         188,
-        199
+        199,
+        210,
+        221,
+        232,
+        243,
+        254,
+        265,
+        276,
+        287,
+        298,
+        309
       ]
     },
     "horarios": "Tiempos de referencia en UTC. Largada sab 24-oct 14:00:00Z (= 16:00 Madrid CEST). Al imprimir se muestra en hora de Madrid: CEST (UTC+2) hasta el dom 25-oct 01:00Z, luego CET (UTC+1) -> el cambio de horario 03:00->02:00 se aplica solo. RE-ANCLAJE: cuando el usuario pasa la hora REAL de Madrid de una entrada, se calcula el tiempo transcurrido desde las 16:00 (restando el salto CEST->CET) y el ritmo real min/stint = transcurrido / stints completados; con ese ritmo se reproyectan los inicio_utc de los stints futuros (mas fiel que el 46.5 min teorico, arrastra el desfase de paradas/reparaciones). clock_juego = reloj interno del simulador (NO coincide con el real), campo informativo aparte."
@@ -498,18 +508,18 @@
       "uso": "1/2",
       "accion_final": "sin cambio",
       "laps": 11,
-      "lap_entrada": null,
+      "lap_entrada": 232,
       "desgaste_entrada": {
-        "FL": null,
-        "FR": null,
-        "RL": null,
-        "RR": null
+        "FL": 85,
+        "FR": 86,
+        "RL": 90,
+        "RR": 89
       },
-      "notas": "EN CURSO. Mariano toma el relevo con set 10 nuevo (arranco ~v222). Amanece pronto - desgaste deberia volver a subir hacia ~1.5%/v de dia"
+      "notas": "REAL. Mariano 1er stint con set 10 nuevo. Entra v232, desgaste 85-86-90-89 (~1.36%/v FL). Solo energia"
     },
     {
       "stint": 23,
-      "estado": "plan",
+      "estado": "real",
       "piloto": "Mariano",
       "piloto_entrante": "Gonzalo",
       "inicio_utc": "2026-10-25T06:11:26Z",
@@ -518,18 +528,18 @@
       "uso": "2/2",
       "accion_final": "neumaticos nuevos",
       "laps": 11,
-      "lap_entrada": null,
+      "lap_entrada": 243,
       "desgaste_entrada": {
-        "FL": null,
-        "FR": null,
-        "RL": null,
-        "RR": null
+        "FL": 72,
+        "FR": 73,
+        "RL": 78,
+        "RR": 77
       },
-      "notas": "Cambio a Gonzalo. Nuevos set 11"
+      "notas": "REAL. Mariano cierra DOBLE set 10 (v243, desgaste 72-73-78-77, ~1.27%/v FL promedio). Monta set 11 nuevo, cede a Gonzalo"
     },
     {
       "stint": 24,
-      "estado": "plan",
+      "estado": "real",
       "piloto": "Gonzalo",
       "piloto_entrante": "Gonzalo",
       "inicio_utc": "2026-10-25T06:57:12Z",
@@ -538,18 +548,18 @@
       "uso": "1/2",
       "accion_final": "sin cambio",
       "laps": 11,
-      "lap_entrada": null,
+      "lap_entrada": 254,
       "desgaste_entrada": {
-        "FL": null,
-        "FR": null,
-        "RL": null,
-        "RR": null
+        "FL": 84,
+        "FR": 87,
+        "RL": 87,
+        "RR": 87
       },
-      "notas": ""
+      "notas": "REAL. Gonzalo 1er stint con set 11 nuevo. Entra v254, desgaste 84-87-87-87 (~1.45%/v FL). Solo energia"
     },
     {
       "stint": 25,
-      "estado": "plan",
+      "estado": "real",
       "piloto": "Gonzalo",
       "piloto_entrante": "Mariano",
       "inicio_utc": "2026-10-25T07:42:02Z",
@@ -558,18 +568,18 @@
       "uso": "2/2",
       "accion_final": "neumaticos nuevos",
       "laps": 11,
-      "lap_entrada": null,
+      "lap_entrada": 265,
       "desgaste_entrada": {
-        "FL": null,
-        "FR": null,
-        "RL": null,
-        "RR": null
+        "FL": 70,
+        "FR": 75,
+        "RL": 77,
+        "RR": 77
       },
-      "notas": "Cambio a Mariano. Nuevos set 12"
+      "notas": "REAL. Gonzalo cierra DOBLE set 11 (v265, desgaste 70-75-77-77, ~1.36%/v FL promedio). Monta set 12 nuevo, cede a Mariano"
     },
     {
       "stint": 26,
-      "estado": "plan",
+      "estado": "real",
       "piloto": "Mariano",
       "piloto_entrante": "Mariano",
       "inicio_utc": "2026-10-25T08:27:04Z",
@@ -578,18 +588,18 @@
       "uso": "1/3",
       "accion_final": "sin cambio",
       "laps": 11,
-      "lap_entrada": null,
+      "lap_entrada": 276,
       "desgaste_entrada": {
-        "FL": null,
-        "FR": null,
-        "RL": null,
-        "RR": null
+        "FL": 86,
+        "FR": 88,
+        "RL": 88,
+        "RR": 89
       },
-      "notas": "Set 12 = TRIPLE de dia (triple 3 de 3, plan original)"
+      "notas": "REAL. Mariano 1er stint con set 12 nuevo (triple 3 de 3). Entra v276 (~10:17 Madrid), desgaste 86-88-88-89 (~1.27%/v FL). Solo energia"
     },
     {
       "stint": 27,
-      "estado": "plan",
+      "estado": "real",
       "piloto": "Mariano",
       "piloto_entrante": "Guille",
       "inicio_utc": "2026-10-25T09:12:38Z",
@@ -598,38 +608,38 @@
       "uso": "2/3",
       "accion_final": "sin cambio",
       "laps": 11,
-      "lap_entrada": null,
+      "lap_entrada": 287,
       "desgaste_entrada": {
-        "FL": null,
-        "FR": null,
-        "RL": null,
-        "RR": null
+        "FL": 75,
+        "FR": 78,
+        "RL": 79,
+        "RR": 80
       },
-      "notas": "Cambio a Guille"
+      "notas": "REAL. Mariano cierra 2do stint de triple set 12 (v287 ~11:02, desgaste 75-78-79-80, ~1.0%/v FL impecable). Solo energia, sube Guille para 3/3"
     },
     {
       "stint": 28,
-      "estado": "plan",
+      "estado": "real",
       "piloto": "Guille",
       "piloto_entrante": "Guille",
       "inicio_utc": "2026-10-25T09:58:12Z",
       "clock_juego": null,
       "set": 12,
       "uso": "3/3",
-      "accion_final": "neumaticos nuevos",
+      "accion_final": "neumaticos nuevos (set 13) + energia",
       "laps": 11,
-      "lap_entrada": null,
+      "lap_entrada": 298,
       "desgaste_entrada": {
-        "FL": null,
-        "FR": null,
-        "RL": null,
-        "RR": null
+        "FL": 58,
+        "FR": 64,
+        "RL": 70,
+        "RR": 70
       },
-      "notas": "Cierre triple set 12. Nuevos set 13"
+      "notas": "REAL. Guille cierra TRIPLE set 12 (v298 ~11:47, desgaste 58-64-70-70). FL al 58% provoco fuerte subviraje como se previa. Monta Set 13 nuevo (4 ruedas) y sigue Guille"
     },
     {
       "stint": 29,
-      "estado": "plan",
+      "estado": "real",
       "piloto": "Guille",
       "piloto_entrante": "Guille",
       "inicio_utc": "2026-10-25T10:43:03Z",
@@ -638,25 +648,25 @@
       "uso": "1/2",
       "accion_final": "sin cambio",
       "laps": 11,
-      "lap_entrada": null,
+      "lap_entrada": 309,
       "desgaste_entrada": {
-        "FL": null,
-        "FR": null,
-        "RL": null,
-        "RR": null
+        "FL": 84,
+        "FR": 87,
+        "RL": 89,
+        "RR": 89
       },
-      "notas": "Set 13 = DOBLE (antes triple; pasado a doble por ir sobrados de sets)"
+      "notas": "REAL. Guille 1er stint con set 13 nuevo. Entra v309 (~12:32), desgaste 84-87-89-89 (~1.45%/v FL). Solo energia, sigue Guille para cerrar su tanda de 3 stints"
     },
     {
       "stint": 30,
-      "estado": "plan",
+      "estado": "real",
       "piloto": "Guille",
       "piloto_entrante": "Gonzalo",
       "inicio_utc": "2026-10-25T11:27:42Z",
       "clock_juego": null,
       "set": 13,
       "uso": "2/2",
-      "accion_final": "neumaticos nuevos",
+      "accion_final": "neumaticos nuevos (set 14) + energia",
       "laps": 11,
       "lap_entrada": null,
       "desgaste_entrada": {
@@ -665,7 +675,7 @@
         "RL": null,
         "RR": null
       },
-      "notas": "Cambio a Gonzalo. Nuevos set 14 (ULTIMO)"
+      "notas": "EN CURSO. Guille cierra su tanda de 3 stints y el doble del set 13 (v310-v320). Parada v320: 4 neumaticos nuevos (Set 14 - ULTIMO SET) + relevo a Gonzalo"
     },
     {
       "stint": 31,
@@ -685,7 +695,7 @@
         "RL": null,
         "RR": null
       },
-      "notas": ""
+      "notas": "ULTIMA PARADA. Regla energia: calcular (vueltas restantes estimadas + 2 de margen) * 8.9%. No llenar al 100% para ahorrar segundos en box. Sin cambio de ruedas ni piloto (remata Gonzalo)"
     },
     {
       "stint": 32,

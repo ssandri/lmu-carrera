@@ -82,16 +82,15 @@ Ingeniero de carrera + pit wall. No conduces: aconsejas.
 > próximo evento y qué medir.
 
 ```
-Momento:        dom 25-oct ~06:25 Madrid (CET). Sebas se va a dormir, traspaso aquí.
-Stint en curso: 22 — EN CURSO
-Piloto:         Mariano — set 10 (uso 1/2), nuevo, arrancó ~v222
-Acaba de pasar: Sebas cerró su doble (set 9) en v221, desgaste 68-71-75-75, cedió a Mariano.
-Próximo evento: stint 23 (~v243): Mariano cierra el doble del set 10 → set 11 nuevo + cede a Gonzalo. Amanece en este tramo.
-A medir:        desgaste FL-FR-RL-RR en cada entrada (FL es el crítico). Ver si al amanecer sube hacia ~1.5%/v.
-Track limits:   7.75/12 ⚠️ — a 12 = DRIVE-THROUGH. Avisar fuerte a los pilotos, es el riesgo nº1.
-Reserva sets:   ~22 neumáticos nuevos (tras montar set 10). Plan consume 20 hasta bandera → sobran ~2. Cuadra.
-Proyección:     se completan los 32 stints. Stint 32 cierra ~13:57 Madrid, bandera 15:00 (margen ~1h).
-Desgaste noche: FL ~1.4-1.5%/v, NO desgasta menos que de día. Mantener dobles; triples solo de día (set 12).
+Momento:        dom 25-oct ~12:32 Madrid (CET). Carrera en vivo v310/345.
+Stint en curso: 30 — EN CURSO (Guille al volante)
+Piloto:         Guille — set 13 (uso 2/2, cierre de doble), arrancó v310 (~12:32)
+Acaba de pasar: Guille cerró stint 29 en v309 (84-87-89-89), solo energía.
+Próximo evento: stint 30 entra en v320 (~13:17): CIERRE DOBLE SET 13 -> 4 NEUMÁTICOS NUEVOS (Set 14, ÚLTIMO SET) + RELEVO A GONZALO.
+A medir:        desgaste FL-FR-RL-RR en v320 al cerrar el set 13.
+Track limits:   8.5/12 (margen de 3.5 avisos). CUIDAR PIANOS.
+Reserva sets:   6 neumáticos nuevos (Set 14 de 4 ruedas para v320 + 2 de reserva para pinchazo). Cuadra perfecto.
+Proyección:     se completan los 32 stints + Splash & Dash final (v342 a 345). Bandera 15:00.
 ```
 
 Mientras tanto, el estado más reciente guardado está en `carrera.json` (`meta.estado_actual`).
